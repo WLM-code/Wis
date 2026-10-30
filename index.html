@@ -1,0 +1,1225 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wiskunde Oefenwereld · H3 Assenstelsel</title>
+<meta name="theme-color" content="#6c3ce0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Wiskunde H3">
+<link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgcng9IjExMiIgZmlsbD0iIzZjM2NlMCIvPjxnIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2Q1YzZmYiIgc3Ryb2tlLXdpZHRoPSI2IiBvcGFjaXR5PSIuNTUiPjxwYXRoIGQ9Ik0xNTAgMTQwVjQwME0yMTAgMTQwVjQwME0yNzAgMTQwVjQwME0zMzAgMTQwVjQwME0zOTAgMTQwVjQwME0xMjAgMTcwSDQxME0xMjAgMjMwSDQxME0xMjAgMjkwSDQxME0xMjAgMzUwSDQxMCIvPjwvZz48cGF0aCBkPSJNMTIwIDQwMEg0MjBNMTIwIDQwMFYxMTAiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIyMCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBmaWxsPSJub25lIi8+PHBhdGggZD0iTTQyMCA0MDBsLTI2LTE2djMyek0xMjAgMTEwbC0xNiAyNmgzMnoiIGZpbGw9IiNmZmYiLz48cGF0aCBkPSJNMTUwIDM2MEwyNDAgMjkwTDMwMCAzMTBMMzkwIDE3MCIgc3Ryb2tlPSIjZmZjNTMxIiBzdHJva2Utd2lkdGg9IjI2IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGZpbGw9Im5vbmUiLz48ZyBmaWxsPSIjZmY1Y2E4IiBzdHJva2U9IiMyNDE1NTMiIHN0cm9rZS13aWR0aD0iMTAiPjxjaXJjbGUgY3g9IjE1MCIgY3k9IjM2MCIgcj0iMjIiLz48Y2lyY2xlIGN4PSIyNDAiIGN5PSIyOTAiIHI9IjIyIi8+PGNpcmNsZSBjeD0iMzAwIiBjeT0iMzEwIiByPSIyMiIvPjxjaXJjbGUgY3g9IjM5MCIgY3k9IjE3MCIgcj0iMjIiLz48L2c+PC9zdmc+Cg==">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<link rel="manifest" href="manifest.webmanifest">
+<style>
+:root{
+  --ink:#241553; --purple:#6c3ce0; --violet:#8b5cf6; --pink:#ff5ca8; --yellow:#ffc531;
+  --teal:#14c8b8; --blue:#3b82f6; --orange:#ff8a3d; --green:#2fcf6b; --red:#ff4d5e;
+  --bg:#efe8ff; --card:#fff;
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;padding:0}
+body{
+  font-family:"Nunito","Trebuchet MS","Avenir Next Rounded","Arial Rounded MT Bold",system-ui,sans-serif;
+  font-weight:700;color:var(--ink);background-color:var(--bg);
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160' viewBox='0 0 160 160'><g fill='none' stroke='%23d5c6fb' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'><path d='M20 24h16M28 16v16'/><path d='M104 30h16'/><path d='M60 70l12 12M72 70L60 82'/><path d='M120 96h18M129 88v0M129 104v0'/><path d='M24 110v26M24 136h26'/><path d='M30 130l6-8 8 4 8-12'/><circle cx='88' cy='128' r='6'/><circle cx='138' cy='40' r='4'/><circle cx='50' cy='50' r='3'/><path d='M96 70l10 16h-20z'/></g><g fill='%23d5c6fb' font-family='Arial' font-weight='bold' font-size='20'><text x='70' y='30'>x</text><text x='118' y='140'>y</text><text x='10' y='84'>=</text><text x='140' y='80'>²</text></g></svg>");
+  background-size:160px 160px;
+  min-height:100vh;line-height:1.35;
+}
+#app{max-width:520px;margin:0 auto;padding:0 14px 150px;min-height:100vh}
+.fb,.psol{scroll-margin-bottom:140px}
+button{font:inherit;color:inherit;cursor:pointer;touch-action:manipulation}
+h1,h2,h3,p{margin:0}
+
+/* header */
+.top{position:sticky;top:0;z-index:20;margin:0 -14px;padding:12px 14px;background:var(--purple);border-bottom:3px solid var(--ink);display:flex;align-items:center;gap:10px;color:#fff}
+.logo{flex:1;font-size:19px;font-weight:900;letter-spacing:.2px;line-height:1.05}
+.logo small{display:block;font-size:12px;opacity:.85;font-weight:700}
+.chip-s{background:#fff;color:var(--ink);border:2.5px solid var(--ink);border-radius:99px;padding:4px 11px;font-weight:900;font-size:14px;box-shadow:0 3px 0 var(--ink);white-space:nowrap}
+
+.hero{margin:16px 0 4px;background:var(--yellow);border:3px solid var(--ink);border-radius:22px;padding:14px 16px;box-shadow:0 5px 0 var(--ink)}
+.hero b{font-size:17px;font-weight:900}
+.hero p{font-size:14px;margin-top:3px;font-weight:700}
+.bar{height:16px;border-radius:99px;background:#fff;border:2.5px solid var(--ink);margin-top:10px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--green);border-right:2.5px solid var(--ink);transition:width .5s}
+
+/* wereld */
+.world{margin-top:22px}
+.wban{border:3px solid var(--ink);border-radius:22px;padding:13px 16px;color:#fff;box-shadow:0 5px 0 var(--ink);display:flex;align-items:center;gap:12px}
+.wban .big{font-size:34px;line-height:1}
+.wban h2{font-size:20px;font-weight:900;line-height:1.1}
+.wban p{font-size:13px;opacity:.95;margin-top:2px}
+.wban .cnt{margin-left:auto;background:#fff;color:var(--ink);border:2.5px solid var(--ink);border-radius:99px;padding:3px 10px;font-size:13px;font-weight:900;white-space:nowrap}
+.wban.dark{color:var(--ink)}
+.path{position:relative;padding:8px 0 4px;display:flex;flex-direction:column;align-items:center}
+.path:before{content:"";position:absolute;top:0;bottom:0;left:50%;border-left:5px dotted #b9a4f5;transform:translateX(-50%)}
+.node{position:relative;display:flex;flex-direction:column;align-items:center;margin:10px 0;width:170px}
+.node:nth-child(4n+1){transform:translateX(-46px)}
+.node:nth-child(4n+3){transform:translateX(46px)}
+.dot{width:78px;height:78px;border-radius:50%;border:3.5px solid var(--ink);display:grid;place-items:center;font-size:34px;background:var(--c,#8b5cf6);box-shadow:0 6px 0 var(--ink);transition:transform .1s}
+.dot:active{transform:translateY(4px);box-shadow:0 2px 0 var(--ink)}
+.node.locked .dot{background:#d9d4e8;filter:grayscale(.3);font-size:28px}
+.node.current .dot{animation:pulse 1.4s infinite}
+@keyframes pulse{0%,100%{box-shadow:0 6px 0 var(--ink),0 0 0 0 rgba(255,197,49,.9)}50%{box-shadow:0 6px 0 var(--ink),0 0 0 12px rgba(255,197,49,0)}}
+.nlab{margin-top:9px;background:#fff;border:2.5px solid var(--ink);border-radius:12px;padding:2px 9px;font-size:13px;font-weight:900;text-align:center}
+.stars{font-size:15px;letter-spacing:1px;margin-top:3px;text-shadow:0 1px 0 #fff}
+.stars .off{filter:grayscale(1);opacity:.35}
+
+/* toets-kaarten */
+.tgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px}
+.tcard{border:3px solid var(--ink);border-radius:20px;background:#fff;padding:14px 10px;text-align:center;box-shadow:0 5px 0 var(--ink);font-weight:900}
+.tcard .n{font-size:30px}
+.tcard small{display:block;font-weight:700;font-size:12px;margin-top:3px}
+.tcard.locked{background:#e3dff0;color:#7d7699}
+.tcard .best{display:inline-block;margin-top:6px;background:var(--yellow);border:2.5px solid var(--ink);border-radius:99px;padding:1px 9px;font-size:13px;color:var(--ink)}
+
+/* knoppen */
+.btn{display:block;width:100%;border:3px solid var(--ink);background:var(--green);color:#fff;border-radius:18px;padding:14px 16px;font-size:18px;font-weight:900;box-shadow:0 5px 0 var(--ink);text-shadow:0 2px 0 rgba(0,0,0,.25);transition:transform .08s}
+.btn:active{transform:translateY(4px);box-shadow:0 1px 0 var(--ink)}
+.btn.alt{background:#fff;color:var(--ink);text-shadow:none}
+.btn.pink{background:var(--pink)}
+.btn.purple{background:var(--purple)}
+.btn:disabled{background:#cfc8e4;color:#8d86a8;box-shadow:0 5px 0 #8d86a8;border-color:#8d86a8;text-shadow:none;cursor:not-allowed}
+.link{background:none;border:none;text-decoration:underline;font-weight:800;color:var(--purple);padding:8px}
+
+/* sheet */
+.ov{position:fixed;inset:0;background:rgba(36,21,83,.55);z-index:50;display:flex;align-items:flex-end;justify-content:center;animation:fade .2s}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+.sheet{background:#fff;width:100%;max-width:520px;border:3px solid var(--ink);border-bottom:none;border-radius:26px 26px 0 0;padding:18px 18px 26px;max-height:88vh;overflow:auto;animation:up .25s}
+@keyframes up{from{transform:translateY(60px)}to{transform:none}}
+.sheet h3{font-size:22px;font-weight:900;display:flex;align-items:center;gap:10px}
+.sheet .ico{width:46px;height:46px;border-radius:50%;border:3px solid var(--ink);display:grid;place-items:center;font-size:24px}
+.learn{background:#f6f1ff;border:2.5px solid var(--ink);border-radius:16px;padding:10px 14px;margin:14px 0;font-weight:700;font-size:15px}
+.learn b.t{display:block;font-size:13px;text-transform:uppercase;letter-spacing:.6px;color:var(--purple);margin-bottom:4px}
+.learn ul{margin:4px 0 0;padding-left:20px}.learn li{margin:3px 0}
+
+/* speelscherm */
+.ptop{position:sticky;top:0;z-index:20;margin:0 -14px;padding:12px 14px;display:flex;align-items:center;gap:12px;background:var(--bg);border-bottom:3px solid var(--ink)}
+.x{width:38px;height:38px;border-radius:50%;border:3px solid var(--ink);background:#fff;font-weight:900;font-size:18px;box-shadow:0 3px 0 var(--ink)}
+.prog{flex:1;display:flex;gap:5px}
+.prog i{flex:1;height:14px;border-radius:99px;border:2.5px solid var(--ink);background:#fff}
+.prog i.ok{background:var(--green)}.prog i.no{background:var(--red)}.prog i.now{background:var(--yellow)}
+.qcard{margin-top:16px;background:#fff;border:3px solid var(--ink);border-radius:22px;padding:16px;box-shadow:0 5px 0 var(--ink)}
+.ctx{margin-bottom:12px}
+.ctxt{font-size:15px;margin-bottom:8px}
+.pq{font-size:17px;font-weight:800;margin-bottom:12px}
+.plabel{color:var(--purple)}
+.ppts{float:right;margin-left:8px;background:var(--yellow);border:2px solid var(--ink);border-radius:99px;padding:0 8px;font-size:12px;font-weight:900}
+.mini{font-family:ui-monospace,Menlo,monospace;font-size:20px;background:#f6f1ff;border:2.5px solid var(--ink);border-radius:12px;padding:8px 14px;display:inline-block;letter-spacing:2px;margin:6px 0;line-height:1.5}
+.opt{display:block;width:100%;text-align:left;background:#fff;border:3px solid var(--ink);border-radius:16px;padding:12px 14px;margin:9px 0;font-weight:800;font-size:16px;box-shadow:0 4px 0 var(--ink)}
+.opt:active{transform:translateY(3px);box-shadow:0 1px 0 var(--ink)}
+.opt.sel{background:#e5dbff;outline:3px solid var(--purple)}
+.opt.right{background:#c9f5d8;border-color:var(--ink);outline:3px solid var(--green)}
+.opt.wrong{background:#ffd6da;outline:3px solid var(--red)}
+.nin{display:inline-flex;align-items:center;gap:6px;margin:2px 4px 2px 0}
+.nin input{width:110px;border:3px solid var(--ink);border-radius:14px;padding:10px 12px;font:inherit;font-weight:900;font-size:19px;background:#fff;text-align:center;color:var(--ink)}
+.nin input.right{background:#c9f5d8;border-color:var(--green)}.nin input.wrong{background:#ffd6da;border-color:var(--red)}
+.nin input:focus{outline:3px solid var(--yellow)}
+.nin input.wide{width:200px;text-align:left}
+.minus{width:40px;height:44px;border-radius:12px;border:3px solid var(--ink);background:var(--yellow);font-weight:900;font-size:22px;box-shadow:0 3px 0 var(--ink);line-height:1}
+.lab{font-weight:900;font-size:18px;margin:0 4px}
+.xyrow{display:flex;align-items:center;flex-wrap:wrap;gap:4px}
+.unit{font-weight:900;font-size:18px}
+.tbl{border-collapse:separate;border-spacing:0;border:3px solid var(--ink);border-radius:14px;overflow:hidden;background:#fff;margin:4px 0 10px;font-size:15px}
+.tbl th,.tbl td{border:1.5px solid #cbbff0;padding:6px 10px;text-align:center;font-weight:800}
+.tbl th{background:#e5dbff}
+.tbl td input{width:86px;border:2.5px solid var(--ink);border-radius:10px;padding:6px;font:inherit;font-weight:900;font-size:16px;text-align:center}
+.tbl td input.right{background:#c9f5d8}.tbl td input.wrong{background:#ffd6da}
+.scr{overflow-x:auto;max-width:100%}
+.figwrap{display:flex;justify-content:center;margin:6px 0}
+svg.grid{width:100%;height:auto;background:#fff;border:2.5px solid var(--ink);border-radius:14px;touch-action:manipulation;user-select:none;-webkit-user-select:none}
+.interactive svg.grid{cursor:crosshair;background:#fffdf3}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin:6px 0}
+.chip{min-width:44px;height:44px;border-radius:50%;border:3px solid var(--ink);background:#fff;font-weight:900;font-size:17px;box-shadow:0 3px 0 var(--ink)}
+.chip.on{background:var(--yellow)}.chip.done{background:#c9f5d8}.chip.on.done{background:var(--yellow)}
+.readout{font-size:14px;color:#5b4d8f;min-height:20px;margin:2px 0 4px}
+.psol{margin-top:10px;font-size:15px;background:#f6f1ff;border:2.5px dashed var(--ink);border-radius:14px;padding:9px 12px}
+.fb{margin:16px -2px 0;border:3px solid var(--ink);border-radius:18px;padding:12px 14px;font-weight:800;font-size:15px}
+.fb.ok{background:#c9f5d8}.fb.no{background:#ffe0e3}
+.fb .h{font-size:19px;font-weight:900;margin-bottom:4px}
+.fb .u{font-weight:700;margin-top:6px}
+.bottom{position:fixed;left:0;right:0;bottom:0;z-index:30;padding:12px 14px calc(14px + env(safe-area-inset-bottom));background:var(--bg);border-top:3px solid var(--ink)}
+.bottom .in{max-width:520px;margin:0 auto}
+
+/* resultaat */
+.res{text-align:center;margin-top:30px}
+.res .bigstars{font-size:54px;letter-spacing:4px}
+.res h2{font-size:28px;font-weight:900;margin:6px 0}
+.res p{font-size:17px;margin:6px 0 20px}
+.res .card{background:#fff;border:3px solid var(--ink);border-radius:22px;padding:20px 16px;box-shadow:0 5px 0 var(--ink)}
+.cijfer{display:inline-grid;place-items:center;width:112px;height:112px;border-radius:50%;border:4px solid var(--ink);background:var(--yellow);font-size:38px;font-weight:900;box-shadow:0 6px 0 var(--ink);margin:6px 0 10px}
+.stack>*+*{margin-top:12px}
+
+/* toets */
+.opg{margin-top:18px;background:#fff;border:3px solid var(--ink);border-radius:22px;padding:14px 14px 8px;box-shadow:0 5px 0 var(--ink)}
+.opg h3{font-size:18px;font-weight:900;margin-bottom:8px;color:var(--purple)}
+.opg .part{padding:10px 0;border-top:2px dotted #cbbff0}
+.opg .part:first-of-type{border-top:none}
+.mark{display:inline-block;font-weight:900;margin-right:6px}
+.part.okp .pq{color:#0f8a43}.part.nop .pq{color:#c4283a}
+.pscore{display:inline-block;border:2px solid var(--ink);border-radius:99px;padding:0 8px;font-size:12px;font-weight:900;background:#fff;margin-left:6px}
+
+.foot{margin:26px 0 0;text-align:center;font-size:13px;color:#6b5ea3}
+.confetti{position:fixed;top:-20px;z-index:99;font-size:24px;pointer-events:none;animation:fall linear forwards}
+@keyframes fall{to{transform:translateY(110vh) rotate(540deg)}}
+@media (max-width:380px){.dot{width:70px;height:70px}.opt{font-size:15px}}
+
+</style>
+</head>
+<body>
+<div id="app"></div>
+<script>
+'use strict';
+/* ===== hulpfuncties ===== */
+const R=(a,b)=>a+Math.floor(Math.random()*(b-a+1));
+const pick=a=>a[R(0,a.length-1)];
+const coin=()=>Math.random()<.5;
+const shuffle=a=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=R(0,i);[a[i],a[j]]=[a[j],a[i]];}return a;};
+const r2=n=>Math.round(n*100)/100;
+const nl=n=>String(r2(n)).replace('.',',').replace('-','−');
+const fm=n=>Number.isInteger(n)?String(n):n.toFixed(2).replace('.',',');
+const eur=n=>'€ '+fm(r2(n));
+function hf(n){const neg=n<0,a=Math.abs(n),w=Math.floor(a),half=a-w>0.25;let s=(w>0||!half)?String(w):'';if(half)s+='½';return (neg&&a>0?'−':'')+s;}
+const ptH=(x,y)=>`(${hf(x)}, ${hf(y)})`;
+const pt=(x,y)=>(Number.isInteger(x)&&Number.isInteger(y))?`(${nl(x)}, ${nl(y)})`:`(${nl(x)}; ${nl(y)})`;
+const gcd=(a,b)=>b?gcd(b,a%b):Math.abs(a);
+function h(tag,cls,html){const e=document.createElement(tag);if(cls)e.className=cls;if(html!=null)e.innerHTML=html;return e;}
+function toNum(s){
+  s=String(s).trim().replace(/[−–—]/g,'-').replace(/€|°C|°|%|\s/g,'');
+  const m=s.match(/^(-?)(\d*)½$/); if(m){return (m[1]?-1:1)*((m[2]?parseInt(m[2],10):0)+0.5);}
+  s=s.replace(',','.');
+  if(!/^-?\d*\.?\d+$/.test(s))return NaN; return parseFloat(s);
+}
+function wr(right,cands,pad){const out=[];const p=pad||[];for(const c of cands.concat(p)){const s=String(c);if(s!==String(right)&&!out.includes(s))out.push(s);if(out.length===3)break;}let k=1;while(out.length<3){const s=String(Number(right)+k*(k%2?1:-1)*Math.ceil(k/2)); if(s!==String(right)&&!out.includes(s))out.push(s);k++;}return out;}
+function niceStep(max){const L=[1,2,5,10,20,25,50,100,200,250,500,1000];for(const s of L){if(max/s<=10)return s;}return 1000;}
+function axisFor(vals,minZero=true){const mx=Math.max(...vals),mn=Math.min(...vals);const step=niceStep(Math.max(mx,Math.abs(mn)));const max=Math.ceil(mx/step)*step||step;const min=(mn<0||!minZero)?Math.floor(mn/step)*step:0;return {min,max:Math.max(max,step),step};}
+
+/* ===== vraag-bouwstenen ===== */
+const mc=(q,right,wrongs,uitleg,o={})=>{const ws=[];wrongs.forEach(w=>{if(w!==right&&!ws.includes(w))ws.push(w);});const opts=shuffle([right,...ws]);return {type:'mc',q,opts,a:opts.indexOf(right),uitleg,pts:o.pts||1,ctx:o.ctx};};
+const num=(q,a,uitleg,o={})=>({type:'num',q,a,uitleg,pts:o.pts||1,pre:o.pre||'',post:o.post||'',neg:o.neg||a<0,tol:o.tol!=null?o.tol:0.0051,ctx:o.ctx});
+const nums=(q,a,uitleg,o={})=>({type:'nums',q,a,uitleg,pts:o.pts||1,post:o.post||'',neg:o.neg||a.some(v=>v<0),ctx:o.ctx});
+const txt=(q,re,show,uitleg,o={})=>({type:'txt',q,re,show,uitleg,pts:o.pts||1,ctx:o.ctx});
+const xy=(q,a,uitleg,o={})=>({type:'xy',q,a,uitleg,pts:o.pts||1,labels:o.labels||['x =','y ='],ctx:o.ctx,fmt:o.fmt});
+const table=(q,t,uitleg,o={})=>({type:'table',q,table:t,uitleg,pts:o.pts||1,ctx:o.ctx,money:o.money,pre:o.pre||''});
+const plot=(q,o)=>Object.assign({type:'plot',q,pts:1,mode:'set',connect:'none',snap:{x:1,y:1},tol:{x:0,y:0}},o);
+
+/* ===== assenstelsel tekenen (SVG) ===== */
+const NS='http://www.w3.org/2000/svg';
+function S(tag,attrs,parent){const e=document.createElementNS(NS,tag);for(const k in attrs)e.setAttribute(k,attrs[k]);if(parent)parent.appendChild(e);return e;}
+const PAL=['#ff5ca8','#3b82f6','#14c8b8','#ff8a3d','#8b5cf6','#2fcf6b','#e11d48','#0ea5e9'];
+function gridSVG(g0){
+  let g=Object.assign({xs:1,ys:1},g0);
+  const coord=g.style==='coord';
+  if(g.zaag==='y'&&!coord){g.ymin=g.ymin-g.ys;}
+  const xr=g.xmax-g.xmin,yr=g.ymax-g.ymin;
+  const m=coord?{l:26,r:30,t:30,b:26}:{l:g.ml||44,r:22,t:24,b:g.xlab?46:34};
+  const W=g.w||330,H=g.h||(coord?330:270);
+  let cx,cy;
+  if(g.square===false){cx=W/xr;cy=H/yr;}else{cx=cy=Math.min(W/xr,H/yr);}
+  const pw=cx*xr,ph=cy*yr,vw=pw+m.l+m.r,vh=ph+m.t+m.b;
+  const svg=S('svg',{viewBox:`0 0 ${vw} ${vh}`,class:'grid'});
+  svg.style.maxWidth=Math.round(vw*1.35)+'px';
+  const X=x=>m.l+(x-g.xmin)*cx,Y=y=>m.t+(g.ymax-y)*cy;
+  const nx=Math.round(xr/g.xs),ny=Math.round(yr/g.ys);
+  const lx=(g.lbl&&g.lbl.x)||1,ly=(g.lbl&&g.lbl.y)||1;
+  for(let i=0;i<=nx;i++){const x=g.xmin+i*g.xs;S('line',{x1:X(x),y1:m.t,x2:X(x),y2:m.t+ph,stroke:'#d6d0ee','stroke-width':1.2},svg);}
+  for(let i=0;i<=ny;i++){const y=g.ymin+i*g.ys;S('line',{x1:m.l,y1:Y(y),x2:m.l+pw,y2:Y(y),stroke:'#d6d0ee','stroke-width':1.2},svg);}
+  const T=(x,y,t,o={})=>{const e=S('text',Object.assign({x,y,'font-size':o.fs||12,'font-weight':800,fill:'#241553','text-anchor':o.a||'middle'},o.at||{}),svg);e.textContent=t;return e;};
+  const INK='#241553';
+  if(coord){
+    const x0=Math.max(g.xmin,Math.min(g.xmax,0)),y0=Math.max(g.ymin,Math.min(g.ymax,0));
+    S('line',{x1:X(g.xmin)-6,y1:Y(y0),x2:X(g.xmax)+16,y2:Y(y0),stroke:INK,'stroke-width':2.4},svg);
+    S('polygon',{points:`${X(g.xmax)+22},${Y(y0)} ${X(g.xmax)+12},${Y(y0)-5} ${X(g.xmax)+12},${Y(y0)+5}`,fill:INK},svg);
+    S('line',{x1:X(x0),y1:Y(g.ymin)+6,x2:X(x0),y2:Y(g.ymax)-16,stroke:INK,'stroke-width':2.4},svg);
+    S('polygon',{points:`${X(x0)},${Y(g.ymax)-22} ${X(x0)-5},${Y(g.ymax)-12} ${X(x0)+5},${Y(g.ymax)-12}`,fill:INK},svg);
+    for(let i=0;i<=nx;i+=1){const x=g.xmin+i*g.xs;if(Math.abs(x)<1e-9||i%lx)continue;T(X(x),Y(y0)+15,nl(x));}
+    for(let i=0;i<=ny;i+=1){const y=g.ymin+i*g.ys;if(Math.abs(y)<1e-9||i%ly)continue;T(X(x0)-6,Y(y)+4,nl(y),{a:'end'});}
+    T(X(x0)-9,Y(y0)+15,'O',{fs:13});
+    T(X(g.xmax)+20,Y(y0)-9,'x',{fs:15,at:{'font-style':'italic'}});
+    T(X(x0)+11,Y(g.ymax)-14,'y',{fs:15,at:{'font-style':'italic'}});
+  }else{
+    if(g.xmin<0&&g.xmax>0)S('line',{x1:X(0),y1:m.t,x2:X(0),y2:m.t+ph,stroke:INK,'stroke-width':1.8},svg);
+    if(g.ymin<0&&g.ymax>0)S('line',{x1:m.l,y1:Y(0),x2:m.l+pw,y2:Y(0),stroke:INK,'stroke-width':1.8},svg);
+    S('line',{x1:m.l,y1:m.t-4,x2:m.l,y2:m.t+ph,stroke:INK,'stroke-width':2.6},svg);
+    S('line',{x1:m.l,y1:m.t+ph,x2:m.l+pw+4,y2:m.t+ph,stroke:INK,'stroke-width':2.6},svg);
+    for(let i=0;i<=nx;i++){if(i%lx)continue;const x=g.xmin+i*g.xs;const lab=g.xnames?(g.xnames[i-1]||''):nl(x);if(lab!=='')T(X(x),m.t+ph+16,lab);}
+    for(let i=0;i<=ny;i++){if(i%ly)continue;const y=g.ymin+i*g.ys;const lab=(g.zaag==='y'&&i===0)?'0':nl(y);T(m.l-7,Y(y)+4,lab,{a:'end'});}
+    if(g.zaag==='y'){const x=m.l,y1=Y(g.ymin),y2=Y(g.ymin+g.ys);S('rect',{x:x-4,y:y2,width:8,height:y1-y2,fill:'#fff'},svg);S('polyline',{points:`${x},${y1} ${x},${y1-(y1-y2)*.2} ${x-6},${y1-(y1-y2)*.4} ${x+6},${y1-(y1-y2)*.6} ${x},${y1-(y1-y2)*.8} ${x},${y2}`,fill:'none',stroke:INK,'stroke-width':2.2},svg);}
+    if(g.xlab)T(m.l+pw,vh-5,'→ '+g.xlab,{a:'end',fs:12});
+    if(g.ylab)T(5,13,'→ '+g.ylab,{a:'start',fs:12});
+    if(g.title)T(m.l+pw/2,12,g.title,{fs:12,at:{'letter-spacing':'1px'}});
+  }
+  const layer=S('g',{},svg);
+  const toData=e=>{const p=svg.createSVGPoint();p.x=e.clientX;p.y=e.clientY;const q=p.matrixTransform(svg.getScreenCTM().inverse());return {x:g.xmin+(q.x-m.l)/cx,y:g.ymax-(q.y-m.t)/cy};};
+  return {svg,X,Y,layer,toData,g,m,cx,cy};
+}
+function mk(gs,x,y,o={}){
+  const G=S('g',{},gs.layer);
+  if(o.ring){S('circle',{cx:gs.X(x),cy:gs.Y(y),r:9,fill:'none',stroke:'#16a34a','stroke-width':3,'stroke-dasharray':'3 2'},G);}
+  else S('circle',{cx:gs.X(x),cy:gs.Y(y),r:o.r||5.5,fill:o.fill||'#ff4d6d',stroke:'#241553','stroke-width':o.sw||2},G);
+  if(o.label){const t=S('text',{x:gs.X(x)+8,y:gs.Y(y)-8,'font-size':13,'font-weight':900,fill:o.lc||'#241553'},G);t.textContent=o.label;}
+}
+function ln(gs,pts,o={}){
+  if(pts.length<2)return;
+  const d=pts.map(p=>gs.X(p.x)+','+gs.Y(p.y)).join(' ');
+  S(o.closed?'polygon':'polyline',{points:d,fill:'none',stroke:o.color||'#6c3ce0','stroke-width':o.w||3,'stroke-linejoin':'round','stroke-linecap':'round','stroke-dasharray':o.dash||''},gs.layer);
+}
+function drawFig(gs,fig){
+  (fig.lines||[]).forEach(l=>ln(gs,l.pts,{color:l.color,dash:l.dash}));
+  const P=fig.pts||[];
+  if(fig.line)ln(gs,P.slice().sort((a,b)=>a.x-b.x));
+  if(fig.poly)ln(gs,P,{closed:true});
+  if(fig.edges)fig.edges.forEach(e=>ln(gs,[P[e[0]],P[e[1]]],{color:'#241553',w:2.5}));
+  P.forEach((p,i)=>mk(gs,p.x,p.y,fig.labeled?{fill:PAL[i%PAL.length],label:p.l,r:6}:{fill:'#241553',r:4}));
+}
+function figEl(fig){
+  const gs=gridSVG(fig.grid);drawFig(gs,fig);
+  const w=h('div','figwrap');w.appendChild(gs.svg);return w;
+}
+function tableEl(t){
+  const wrap=h('div','scr');const tb=h('table','tbl');
+  const r1=h('tr'),r2_=h('tr');
+  r1.appendChild(h('th','',t.head[0]));r2_.appendChild(h('th','',t.head[1]));
+  t.xs.forEach((x,i)=>{r1.appendChild(h('td','',t.xfmt?t.xfmt(x):nl(x)));r2_.appendChild(h('td','',t.ys[i]==null?'':(t.yfmt?t.yfmt(t.ys[i]):nl(t.ys[i]))));});
+  tb.appendChild(r1);tb.appendChild(r2_);wrap.appendChild(tb);return wrap;
+}
+function renderCtx(c){
+  if(!c)return null;
+  const d=h('div','ctx');
+  if(c.text)d.appendChild(h('p','ctxt',c.text));
+  if(c.table)d.appendChild(tableEl(c.table));
+  if(c.fig)d.appendChild(figEl(c.fig));
+  if(c.html)d.appendChild(h('div','',c.html));
+  return d;
+}
+/* kleine globale grafieken (zonder getallen) */
+function gSvg(kind){
+  const P={up:'M12 58 L82 12',upoff:'M12 42 L82 10',down:'M12 12 L82 56',flat:'M12 30 L82 30',pause:'M12 58 L34 34 L56 34 L82 8',hill:'M12 58 Q47 -6 82 58',valley:'M12 10 Q47 70 82 10',stopgo:'M12 56 L30 36 L42 36 L60 18 L64 18 L82 6'};
+  return `<svg viewBox="0 0 96 70" width="110" height="80" style="display:block;margin:auto"><path d="M8 4V62H92" fill="none" stroke="#241553" stroke-width="2.5"/><path d="${P[kind]}" fill="none" stroke="#ff5ca8" stroke-width="3.5" stroke-linecap="round"/></svg>`;
+}
+
+/* ===== vraagtypen ===== */
+function minusBtn(inp){const m=h('button','minus','−');m.type='button';m.onclick=()=>{const v=inp.value.trim();inp.value=(v.startsWith('−')||v.startsWith('-'))?v.slice(1):'−'+v;inp.dispatchEvent(new Event('input'));};return m;}
+function numBox(neg,onch,cls){const w=h('span','nin');const i=h('input',cls||'');i.type='text';i.autocomplete='off';i.inputMode=neg?'text':'decimal';i.oninput=onch;if(neg)w.appendChild(minusBtn(i));w.appendChild(i);return {w,i};}
+const same=(a,b,t)=>Math.abs(a-b)<=t+1e-9;
+const TYPES={
+mc(p,body,api){
+  let sel=-1;
+  const btns=p.opts.map((t,i)=>{const b=h('button','opt',t);b.onclick=()=>{if(api.locked)return;sel=i;btns.forEach((x,j)=>x.classList.toggle('sel',j===i));api.onchange&&api.onchange();};body.appendChild(b);return b;});
+  api.answered=()=>sel>=0;api.frac=()=>sel===p.a?1:0;
+  api.reveal=()=>{btns.forEach((b,j)=>{if(j===p.a)b.classList.add('right');else if(j===sel)b.classList.add('wrong');});};
+  api.solText=`Goed antwoord: <b>${p.opts[p.a]}</b>`;
+  api.autofill=()=>{sel=p.a;};api.autowrong=()=>{sel=(p.a+1)%p.opts.length;};
+},
+num(p,body,api){
+  const row=h('div','xyrow');
+  if(p.pre)row.appendChild(h('span','unit',p.pre+'&nbsp;'));
+  const nb=numBox(p.neg,()=>api.onchange&&api.onchange());row.appendChild(nb.w);
+  if(p.post)row.appendChild(h('span','unit','&nbsp;'+p.post));
+  body.appendChild(row);const i=nb.i;
+  api.answered=()=>i.value.trim()!=='';
+  api.frac=()=>{const v=toNum(i.value);return same(v,p.a,p.tol)?1:0;};
+  api.reveal=()=>{i.classList.add(api.frac()===1?'right':'wrong');};
+  api.solText=`Antwoord: <b>${p.pre?p.pre+' ':''}${nl(p.a)}${p.post?' '+p.post:''}</b>`;
+  api.autofill=()=>{i.value=String(p.a).replace('.',',');};api.autowrong=()=>{i.value=String(p.a+7);};
+},
+nums(p,body,api){
+  const row=h('div','xyrow');const ins=[];
+  p.a.forEach((_,k)=>{const nb=numBox(p.neg,()=>api.onchange&&api.onchange());row.appendChild(nb.w);ins.push(nb.i);if(k<p.a.length-1)row.appendChild(h('span','lab','en'));});
+  if(p.post)row.appendChild(h('span','unit','&nbsp;'+p.post));
+  body.appendChild(row);
+  api.answered=()=>ins.every(i=>i.value.trim()!=='');
+  api.frac=()=>{const got=ins.map(i=>toNum(i.value)).sort((a,b)=>a-b),want=p.a.slice().sort((a,b)=>a-b);return got.every((v,k)=>same(v,want[k],0.0051))?1:0;};
+  api.reveal=()=>{const f=api.frac()===1;ins.forEach(i=>i.classList.add(f?'right':'wrong'));};
+  api.solText=`Antwoord: <b>${p.a.map(nl).join(' en ')}${p.post?' '+p.post:''}</b>`;
+  api.autofill=()=>{ins.forEach((i,k)=>i.value=String(p.a[k]).replace('.',','));};api.autowrong=()=>{ins.forEach(i=>i.value='99');};
+},
+txt(p,body,api){
+  const w=h('span','nin');const i=h('input','wide');i.type='text';i.autocomplete='off';i.autocapitalize='none';i.oninput=()=>api.onchange&&api.onchange();w.appendChild(i);body.appendChild(w);
+  api.answered=()=>i.value.trim()!=='';
+  api.frac=()=>p.re.some(r=>r.test(i.value.trim().toLowerCase()))?1:0;
+  api.reveal=()=>i.classList.add(api.frac()===1?'right':'wrong');
+  api.solText=`Antwoord: <b>${p.show}</b>`;api.autofill=()=>{i.value=p.show;};api.autowrong=()=>{i.value='weet ik niet';};
+},
+xy(p,body,api){
+  const row=h('div','xyrow');
+  const a=numBox(true,()=>api.onchange&&api.onchange()),b=numBox(true,()=>api.onchange&&api.onchange());
+  row.appendChild(h('span','lab',p.labels[0]));row.appendChild(a.w);row.appendChild(h('span','lab',p.labels[1]));row.appendChild(b.w);body.appendChild(row);
+  api.answered=()=>a.i.value.trim()!==''&&b.i.value.trim()!=='';
+  api.frac=()=>(same(toNum(a.i.value),p.a[0],0.0051)&&same(toNum(b.i.value),p.a[1],0.0051))?1:0;
+  api.reveal=()=>{const f=api.frac()===1;a.i.classList.add(f?'right':'wrong');b.i.classList.add(f?'right':'wrong');};
+  api.solText=`Antwoord: <b>${p.fmt?p.fmt(p.a):p.labels[0]+' '+hf(p.a[0])+' en '+p.labels[1]+' '+hf(p.a[1])}</b>`;
+  api.autofill=()=>{a.i.value=String(p.a[0]).replace('.',',');b.i.value=String(p.a[1]).replace('.',',');};api.autowrong=()=>{a.i.value='41';b.i.value='42';};
+},
+table(p,body,api){
+  const t=p.table;const tb=h('table','tbl');
+  const hd=h('tr');hd.appendChild(h('th','',t.head[0]));hd.appendChild(h('th','',t.head[1]));tb.appendChild(hd);
+  const ins=[];
+  t.xs.forEach((x,k)=>{
+    const tr=h('tr');tr.appendChild(h('td','',nl(x)));const td=h('td');
+    if(t.given&&t.given[k]){td.innerHTML=`<b>${t.fmt?t.fmt(t.ys[k]):nl(t.ys[k])}</b>`;ins.push(null);}
+    else{const nb=numBox(!!t.neg,()=>api.onchange&&api.onchange());nb.w.style.margin='0';td.appendChild(nb.w);ins.push(nb.i);}
+    tr.appendChild(td);tb.appendChild(tr);
+  });
+  const wrap=h('div','scr');wrap.appendChild(tb);body.appendChild(wrap);
+  const mine=ins.map((i,k)=>i?k:-1).filter(k=>k>=0);
+  api.answered=()=>mine.some(k=>ins[k].value.trim()!=='');
+  api.frac=()=>mine.filter(k=>same(toNum(ins[k].value),t.ys[k],0.0051)).length/mine.length;
+  api.reveal=()=>mine.forEach(k=>ins[k].classList.add(same(toNum(ins[k].value),t.ys[k],0.0051)?'right':'wrong'));
+  api.solText=`Juiste waarden: <b>${t.ys.map(v=>t.fmt?t.fmt(v):nl(v)).join(' | ')}</b>`;
+  api.autofill=()=>mine.forEach(k=>ins[k].value=String(t.ys[k]).replace('.',','));api.autowrong=()=>mine.forEach(k=>ins[k].value='0,123');
+},
+plot(p,body,api){
+  const gs=gridSVG(p.grid);const wrap=h('div','figwrap interactive');wrap.appendChild(gs.svg);body.appendChild(wrap);
+  const g=gs.g,snap=p.snap,tol=p.tol,T=p.targets,labeled=p.mode==='labeled';
+  let placed=labeled?{}:[],active=labeled?T[0].l:null;
+  const chips=h('div','chips'),chipEls={};
+  if(labeled){T.forEach(t=>{const c=h('button','chip',t.l);c.onclick=()=>{if(api.locked)return;active=t.l;paint();};chips.appendChild(c);chipEls[t.l]=c;});body.insertBefore(chips,wrap);}
+  const read=h('div','readout','Tik op het raster om een punt te zetten.');body.appendChild(read);
+  const paint=()=>{if(!labeled)return;T.forEach(t=>{chipEls[t.l].classList.toggle('on',active===t.l);chipEls[t.l].classList.toggle('done',!!placed[t.l]);});};
+  const base=()=>{gs.layer.innerHTML='';(p.preset||[]).forEach(l=>ln(gs,l.pts,{color:l.color||'#3b82f6'}));(p.presetPts||[]).forEach(q=>mk(gs,q.x,q.y,{fill:'#3b82f6',r:4.5,label:q.l}));};
+  const draw=()=>{base();
+    if(labeled){T.forEach((t,i)=>{const q=placed[t.l];if(q)mk(gs,q.x,q.y,{fill:PAL[i%PAL.length],label:t.l,r:6});});}
+    else placed.forEach(q=>mk(gs,q.x,q.y,{fill:'#ff4d6d',r:6}));};
+  const cl=(v,a,b)=>Math.max(a,Math.min(b,v));
+  gs.svg.addEventListener('click',e=>{
+    if(api.locked)return;
+    let d=gs.toData(e);let x=cl(Math.round(d.x/snap.x)*snap.x,g.xmin,g.xmax),y=cl(Math.round(d.y/snap.y)*snap.y,g.ymin,g.ymax);
+    x=+x.toFixed(6);y=+y.toFixed(6);
+    if(labeled){if(!active)active=(T.find(t=>!placed[t.l])||T[0]).l;placed[active]={x,y};read.textContent=`${active}${p.half?ptH(x,y):pt(x,y)}`;const nxt=T.find(t=>!placed[t.l]);if(nxt)active=nxt.l;paint();}
+    else{const k=placed.findIndex(q=>Math.abs(q.x-x)<1e-9&&Math.abs(q.y-y)<1e-9);if(k>=0)placed.splice(k,1);else if(placed.length<T.length*2)placed.push({x,y});read.textContent=`Laatste tik: x = ${nl(x)} en y = ${nl(y)}`;}
+    draw();api.onchange&&api.onchange();
+  });
+  base();paint();
+  api.answered=()=>labeled?Object.keys(placed).length>0:placed.length>0;
+  const okAt=(q,t)=>q&&same(q.x,t.x,tol.x)&&same(q.y,t.y,tol.y);
+  api.frac=()=>{
+    if(labeled)return T.filter(t=>okAt(placed[t.l],t)).length/T.length;
+    const used=new Set();let hit=0;T.forEach(t=>{const k=placed.findIndex((q,i)=>!used.has(i)&&okAt(q,t));if(k>=0){used.add(k);hit++;}});
+    return hit/Math.max(T.length,placed.length);
+  };
+  api.reveal=()=>{
+    base();
+    const tp=T.map(t=>({x:t.x,y:t.y}));
+    if(p.connect==='line')ln(gs,tp.slice().sort((a,b)=>a.x-b.x),{color:'#16a34a'});
+    if(p.connect==='order')ln(gs,tp,{color:'#16a34a'});
+    if(p.connect==='closed')ln(gs,tp,{color:'#16a34a',closed:true});
+    if(p.edges)p.edges.forEach(e=>ln(gs,[tp[e[0]],tp[e[1]]],{color:'#16a34a',w:2.5}));
+    T.forEach(t=>mk(gs,t.x,t.y,{ring:true,label:labeled?t.l:null,lc:'#16a34a'}));
+    if(labeled)T.forEach((t,i)=>{const q=placed[t.l];if(q)mk(gs,q.x,q.y,{fill:okAt(q,t)?'#2fcf6b':'#ff4d5e',r:5});});
+    else placed.forEach(q=>mk(gs,q.x,q.y,{fill:T.some(t=>okAt(q,t))?'#2fcf6b':'#ff4d5e',r:5}));
+  };
+  api.solText=`De groene stippellijnen laten zien waar de punten horen${p.connect!=='none'||p.edges?' en hoe je ze verbindt':''}.`;
+  api.autofill=()=>{if(labeled){T.forEach(t=>placed[t.l]={x:t.x,y:t.y});}else{placed=T.map(t=>({x:t.x,y:t.y}));}draw();paint();};
+  api.autowrong=()=>{if(labeled){T.forEach(t=>placed[t.l]={x:g.xmin,y:g.ymin});}else{placed=[{x:g.xmin,y:g.ymin}];}draw();};
+}
+};
+function buildPart(p,o={}){
+  const el=h('div','part');
+  const qd=h('div','pq');qd.innerHTML=(o.label?`<b class="plabel">${o.label}</b> `:'')+p.q+(o.showPts?`<span class="ppts">${p.pts}p</span>`:'');
+  el.appendChild(qd);
+  const body=h('div','pbody');el.appendChild(body);
+  const api={el,locked:false,onchange:null};
+  TYPES[p.type](p,body,api);
+  api.lock=()=>{api.locked=true;el.querySelectorAll('input,button.opt,button.minus').forEach(x=>x.disabled=true);};
+  return api;
+}
+
+'use strict';
+/* ===================== CONTEXTEN VOOR FORMULES ===================== */
+const r10=(a,b)=>Array.from({length:b-a+1},(_,i)=>a+i);
+const INC=[
+ {id:'foto',money:1,intro:"Je laat foto's afdrukken.",eenh:'foto',v:"aantal foto's",L:'f',out:'kosten (€)',per:[0.1,0.2,0.15,0.25],vast:[2,3,4,2.5],xs:[0,5,10,15,20]},
+ {id:'kaart',money:1,intro:'Je bestelt kaarten.',eenh:'kaart',v:'aantal kaarten',L:'k',out:'kosten (€)',per:[1.45,1.8,1.25,0.5,0.75],vast:[3.95,4,2.5,3],xs:[0,5,10,15,20]},
+ {id:'zaag',money:1,intro:'Je huurt een decoupeerzaag.',eenh:'dag',v:'tijd (dagen)',L:'t',out:'kosten (€)',per:[21,18,15,12],vast:[7.5,10,5],xs:r10(0,5)},
+ {id:'scooter',money:1,intro:'Je huurt een scooter.',eenh:'dag',v:'tijd (dagen)',L:'d',out:'huurprijs (€)',per:[10,12,8],vast:[15,20,25],xs:r10(0,5)},
+ {id:'schoon',money:1,intro:'Een schoonmaakbedrijf rekent een bedrag aan.',eenh:'uur',v:'tijd (uren)',L:'u',out:'kosten (€)',per:[30,25,40],vast:[40,50,35],xs:r10(0,5)},
+ {id:'folder',money:1,intro:'Sara bezorgt folders.',eenh:'adres',v:'aantal adressen',L:'a',out:'verdiensten (€)',per:[0.15,0.1,0.2],vast:[3,15,5],xs:[0,100,200,300,400,500]},
+ {id:'fiets',money:1,intro:'Moby repareert fietsen aan huis.',eenh:'kwartier',v:'aantal kwartieren',L:'k',out:'bedrag (€)',per:[15,12.5,10],vast:[10,12,15],xs:[0,2,4,6,8]},
+ {id:'tuin',money:1,intro:'Adnan werkt bij een tuincentrum.',eenh:'uur',v:'tijd (uren)',L:'t',out:'inkomsten (€)',per:[4.5,4,5,3.5],vast:[2.5,3,4],xs:r10(0,5)},
+ {id:'sponsor',money:1,intro:'Je loopt mee met een sponsorloop.',eenh:'ronde',v:'aantal ronden',L:'r',out:'bedrag (€)',per:[4,3,2.5,5],vast:[10,12,6],xs:r10(0,5)},
+ {id:'taxi',money:1,intro:'Een taxibedrijf berekent de ritprijs.',eenh:'kilometer',v:'aantal kilometers',L:'k',out:'ritprijs (€)',per:[2,1.5,2.5],vast:[5,4,3.5],xs:[0,2,4,6,8]},
+ {id:'plant',u:'cm',intro:'Een klimplant groeit.',eenh:'week',v:'tijd (weken)',L:'t',out:'hoogte (cm)',per:[7,8,6],vast:[6,26,10],xs:r10(0,5)},
+ {id:'beer',u:'kg',intro:'Een jonge beer groeit.',eenh:'week',v:'tijd (weken)',L:'w',out:'gewicht (kg)',per:[1.5,2,2.5],vast:[12,10,15],xs:[0,2,4,6,8]},
+ {id:'teller',u:'km',intro:'Jasper fietst op vakantie.',eenh:'uur',v:'tijd (uren)',L:'t',out:'tellerstand (km)',per:[18,15,20],vast:[540,500,600],xs:r10(0,5)},
+ {id:'moeras',u:'mm',intro:'In een moeras stijgt het water.',eenh:'minuut',v:'tijd (minuten)',L:'t',out:'hoogte (mm)',per:[1.5,2,2.5],vast:[5,10,8],xs:[0,2,4,6,8]},
+];
+const DEC=[
+ {id:'kaars',u:'cm',dec:1,intro:'Een kaars brandt.',eenh:'uur',v:'brandtijd (uren)',L:'t',out:'lengte (cm)',pairs:[{s:40,p:5,xs:[0,2,4,6,8]},{s:30,p:6,xs:r10(0,5)},{s:24,p:3,xs:[0,2,4,6,8]},{s:20,p:2.5,xs:[0,2,4,6,8]}]},
+ {id:'tel',u:'%',dec:1,intro:'Een telefoon loopt langzaam leeg.',eenh:'uur',v:'tijd (uren)',L:'t',out:'lading (%)',pairs:[{s:80,p:9,xs:[0,2,4,6,8]},{s:100,p:12.5,xs:[0,2,4,6,8]}]},
+ {id:'hond',u:'gram',dec:1,intro:'Een hond krijgt elke dag brokken.',eenh:'dag',v:'tijd (dagen)',L:'d',out:'voorraad (gram)',pairs:[{s:450,p:50,xs:r10(0,5)},{s:800,p:150,xs:r10(0,5)}]},
+ {id:'temp',u:'°C',dec:1,neg:1,intro:"'s Avonds wordt het kouder.",eenh:'uur',v:'tijd (uren)',L:'t',out:'temperatuur (°C)',pairs:[{s:3,p:2,xs:r10(0,5)},{s:5,p:3,xs:r10(0,5)}]},
+ {id:'wasm',u:'ml',dec:1,intro:'Een fles wasmiddel wordt leeggemaakt.',eenh:'wasbeurt',v:'aantal wasbeurten',L:'w',out:'inhoud (ml)',pairs:[{s:1050,p:35,xs:[0,5,10,15,20]},{s:900,p:30,xs:[0,5,10,15,20]}]},
+];
+const nmOf=c=>c.out.replace(/ \(.*\)/,'');
+function inst(c){
+  const dec=!!c.pairs;let vast,per,xs;
+  if(dec){const p=pick(c.pairs);vast=p.s;per=p.p;xs=p.xs;}else{do{vast=pick(c.vast);per=pick(c.per);}while(vast===per);xs=c.xs;}
+  const o={c,vast,per,xs,dec,nm:nmOf(c),money:!!c.money,u:c.u||''};
+  o.f=x=>r2(vast+(dec?-1:1)*per*x);
+  o.fv=n=>c.money?(Number.isInteger(n)?String(n):n.toFixed(2).replace('.',',')):nl(n);
+  o.W=ord=>dec?`${c.out} = ${o.fv(vast)} − ${o.fv(per)} ∙ ${c.v}`:(ord?`${c.out} = ${o.fv(per)} ∙ ${c.v} + ${o.fv(vast)}`:`${c.out} = ${o.fv(vast)} + ${o.fv(per)} ∙ ${c.v}`);
+  o.Lf=ord=>dec?`${c.out} = ${o.fv(vast)} − ${o.fv(per)}${c.L}`:(ord?`${c.out} = ${o.fv(per)}${c.L} + ${o.fv(vast)}`:`${c.out} = ${o.fv(vast)} + ${o.fv(per)}${c.L}`);
+  o.calc=(x,L)=>dec?`${o.fv(vast)} − ${o.fv(per)} ∙ ${x}`:`${o.fv(vast)} + ${o.fv(per)} ∙ ${x}`;
+  o.story=()=>{
+    if(o.money)return `${c.intro} Het vaste bedrag is € ${o.fv(vast)}. Per ${c.eenh} komt er € ${o.fv(per)} bij.`;
+    return `${c.intro} In het begin is de ${o.nm} ${o.fv(vast)} ${o.u}. Per ${c.eenh} ${dec?'gaat':'komt'} er ${o.fv(per)} ${o.u} ${dec?'af':'bij'}.`;
+  };
+  o.ansOpts=()=>({pre:o.money?'€':'',post:o.money?'':o.u,neg:!!c.neg});
+  o.tbl=(blankFirst)=>{const ys=xs.map(o.f);return {head:[c.v,c.out],xs,ys,given:xs.map((_,k)=>k===0&&!blankFirst),neg:!!c.neg,fmt:o.money?(n=>o.fv(n)):undefined};};
+  o.ctxTable=()=>({head:[c.v,c.out],xs,ys:xs.map(o.f),yfmt:o.money?(n=>o.fv(n)):undefined});
+  return o;
+}
+const pickInc=(money)=>pick(INC.filter(c=>money===undefined?true:(!!c.money===money)));
+
+/* ===================== WERELD 1: WISKUNDIG DENKEN ===================== */
+function genPuzzel(){
+  const pool=[
+  ()=>mc('Welk getal komt er nu?<br><b>3, 6, 12, 24, …</b>','48',['36','30','72'],'Elk getal is het dubbele van het vorige: 24 ∙ 2 = 48.'),
+  ()=>mc('Welk getal komt er nu?<br><b>2, 5, 8, 11, …</b>','14',['13','15','16'],'Er komt steeds 3 bij: 11 + 3 = 14.'),
+  ()=>mc('Welk getal komt er nu?<br><b>1, 4, 9, 16, …</b>','25',['20','24','26'],'Dit zijn kwadraten: 1∙1, 2∙2, 3∙3, 4∙4. Dan komt 5∙5 = 25.'),
+  ()=>mc('Welk getal komt er nu?<br><b>1, 1, 2, 3, 5, 8, …</b>','13',['11','12','14'],'Je telt steeds de vorige twee op: 5 + 8 = 13.'),
+  ()=>num('In dit vierkant tellen alle rijen, kolommen en diagonalen op tot 15. Welk getal hoort bij het vraagteken?<div class="mini">2 &nbsp;7 &nbsp;6<br>9 &nbsp;5 &nbsp;1<br>4 &nbsp;3 &nbsp;?</div>',8,'Onderste rij: 4 + 3 + ? = 15, dus ? = 8.'),
+  ()=>mc('Anna is ouder dan Bo. Bo is ouder dan Cas. Wie is de jongste?','Cas',['Anna','Bo','Dat kun je niet weten'],'Anna is ouder dan Bo en Bo is ouder dan Cas. Cas is dus de jongste.'),
+  ()=>num('Je maakt rijtjes vierkanten van lucifers. 1 vierkant: 4 lucifers. 2 vierkanten: 7 lucifers. 3 vierkanten: 10 lucifers. Hoeveel lucifers heb je nodig voor 5 vierkanten?',16,'Er komen steeds 3 lucifers bij: 4, 7, 10, 13, 16.'),
+  ()=>num('Twee munten zijn samen € 1,10. De ene munt is € 1,00 duurder dan de andere. Hoeveel kost de goedkoopste munt?',0.05,'Goedkoopste € 0,05 en duurste € 1,05. Samen € 1,10 en het verschil is € 1,00.',{pre:'€'}),
+  ()=>num('Wat is 1 + 2 + 3 + … + 10? Tip: tel eerst 1 + 10, 2 + 9, 3 + 8, enzovoort.',55,'Je krijgt 5 paren van 11. Dus 5 ∙ 11 = 55.'),
+  ()=>mc('Je gooit met twee dobbelstenen. Welke som kun je NIET gooien?','13',['2','7','12'],'Elke dobbelsteen geeft 1 t/m 6. De som ligt dus tussen 2 en 12.'),
+  ()=>mc('Je hebt een puzzel en je weet niet hoe je moet beginnen. Wat is een goede eerste stap?','Lezen wat je weet en wat je moet vinden',['Meteen alle getallen optellen','Het antwoord raden en klaar','De puzzel overslaan'],'Eerst goed lezen: wat weet je al en wat wil je weten?')
+  ];
+  return shuffle(pool).slice(0,6).map(f=>f());
+}
+function genProblemen(){
+  const G=[
+  ()=>{const x=R(2,9),a=R(2,5),b=R(2,9);return num(`Ik denk aan een getal. Ik doe het keer ${a} en tel er ${b} bij op. De uitkomst is ${a*x+b}. Welk getal had ik in gedachten?`,x,`Werk terug: ${a*x+b} − ${b} = ${a*x} en ${a*x} : ${a} = ${x}.`);},
+  ()=>{const n=R(4,8),t=n*(n-1)/2;return num(`${n} vrienden geven elkaar allemaal één keer een hand. Hoeveel handdrukken zijn dat in totaal?`,t,`Tel systematisch: ${r10(1,n-1).reverse().join(' + ')} = ${t}.`);},
+  ()=>{const n=R(5,9);return num(`Je zet tafels in een rij tegen elkaar. Bij 1 tafel zitten 6 mensen, bij 2 tafels 10 mensen, bij 3 tafels 14 mensen. Hoeveel mensen zitten er bij ${n} tafels?`,4*n+2,`Er komen steeds 4 mensen bij. Bij ${n} tafels: 6 + 4 ∙ ${n-1} = ${4*n+2}.`);},
+  ()=>{let a=R(2,9),b=R(2,9);while(a===b)b=R(2,9);const lo=Math.min(a,b),hi=Math.max(a,b);return num(`Twee getallen hebben som ${a+b} en product ${a*b}. Wat is het grootste getal?`,hi,`Probeer paren met som ${a+b}. ${lo} en ${hi} geven ${lo} ∙ ${hi} = ${lo*hi}.`);},
+  ()=>{const s=R(5,20),w=R(3,8),k=R(4,9);return num(`Je hebt € ${s} en spaart elke week € ${w}. Na hoeveel weken heb je € ${s+w*k}?`,k,`Maak een tabel. Elke week komt er ${w} bij: (${s+w*k} − ${s}) : ${w} = ${k} weken.`);},
+  ()=>{const n=R(5,9);return num(`Een vierkant rooster is ${n} bij ${n} vakjes. Hoeveel vakjes liggen aan de rand?`,4*n-4,`Boven en onder ${n} + ${n}. Links en rechts nog ${n-2} + ${n-2}. Samen ${4*n-4}.`);},
+  ()=>mc('Je zoekt het getal waarmee iemand begon. Je weet wat er allemaal mee gedaan is. Welke strategie past het best?','Terugwerken',['Gokken en hopen','Een rooster tekenen','Alles optellen'],'Bij zo\'n opgave begin je bij de uitkomst en draai je elke stap om: terugwerken.'),
+  ()=>mc('Welke strategie past bij: "Hoeveel mogelijkheden zijn er?"','Systematisch alles opschrijven of tellen',['Alleen schatten','Het grootste getal kiezen','Niets opschrijven'],'Schrijf alle mogelijkheden netjes op in een tabel of lijst, zodat je er geen vergeet.')
+  ];
+  return shuffle(G).slice(0,6).map(f=>f());
+}
+function genLogica(){
+  const P=[
+  ()=>mc('In een mini-Murdoku staat in elke rij en elke kolom precies één persoon. A staat in rij 1, kolom 2. Kan B ook in rij 1 staan?','Nee, in rij 1 staat al A',['Ja, als B in een andere kolom staat','Ja, rijen mogen vol','Dat hangt van de kleur af'],'Er mag maar één persoon per rij staan. Rij 1 is al bezet door A.'),
+  ()=>num('Mini-Murdoku met 3 rijen en 3 kolommen. A, B en C staan elk in een andere rij en kolom. B staat in rij 1, kolom 3. A staat in kolom 2. In welke kolom staat C?',1,'Kolom 3 is van B en kolom 2 van A. Voor C blijft kolom 1 over.'),
+  ()=>num('Zelfde puzzel: B staat in rij 1, kolom 3. A staat in kolom 2 en C in kolom 1. A staat boven C. In welke rij staat A?',2,'Rij 1 is bezet door B. A en C delen rij 2 en 3. A staat boven C, dus A in rij 2.'),
+  ()=>mc('Verdachten: Mo, Sam en Eef. De dader was in de keuken. Mo was niet in de keuken. Sam was in de tuin. Wie is de dader?','Eef',['Mo','Sam','Dat kun je niet weten'],'Mo en Sam waren niet in de keuken. Dus Eef.'),
+  ()=>num('Vijf kamers staan naast elkaar (1 t/m 5). De dader zit in een oneven kamer, maar niet in kamer 1 en niet in kamer 5. In welke kamer zit de dader?',3,'Oneven kamers zijn 1, 3 en 5. Zonder 1 en 5 blijft 3 over.'),
+  ()=>mc('Drie huizen naast elkaar: rood, blauw en groen. Rood staat niet naast groen. Welk huis staat in het midden?','Blauw',['Rood','Groen','Dat kun je niet weten'],'Rood en groen mogen niet naast elkaar. Blauw moet dus tussen hen in staan.'),
+  ()=>mc('Lars, Mina en Noor zitten in een rij. Lars zit links van Mina. Noor zit rechts van Mina. Wie zit in het midden?','Mina',['Lars','Noor','Dat kun je niet weten'],'Lars, Mina, Noor: Mina zit tussen hen in.'),
+  ()=>mc('Welke aanpak helpt het meest bij een logicapuzzel?','Eerst de aanwijzing gebruiken die het meeste uitsluit',['Meteen gokken','Alle aanwijzingen vergeten','Alleen de laatste aanwijzing lezen'],'Begin met de aanwijzing die het meeste uitsluit en streep af wat niet kan.')
+  ];
+  return shuffle(P).slice(0,6).map(f=>f());
+}
+
+/* ===================== §3.2 ASSENSTELSEL ===================== */
+const COORD=(n,m=n)=>({style:'coord',xmin:-n,xmax:n,ymin:-m,ymax:m,xs:1,ys:1});
+function genBegrippen32(){
+  const P=[
+  ()=>txt('Hoe heet het beginpunt van de assen in een assenstelsel?',[/oorsprong/],'de oorsprong','De x-as en de y-as kruisen elkaar in de <b>oorsprong</b>. Daar hoort (0, 0) bij.'),
+  ()=>mc('De x-as, de y-as en de oorsprong vormen samen een …','assenstelsel',['rooster zonder lijnen','coördinaat','roosterpunt'],'De x-as, de y-as en de oorsprong vormen samen een <b>assenstelsel</b>.'),
+  ()=>mc('Hoe heet de horizontale as (van links naar rechts)?','x-as',['y-as','oorsprong','roosterlijn'],'De <b>x-as</b> loopt horizontaal. De <b>y-as</b> loopt verticaal.'),
+  ()=>mc('Hoe heet de verticale as (van onder naar boven)?','y-as',['x-as','oorsprong','roosterpunt'],'De <b>y-as</b> loopt verticaal.'),
+  ()=>txt('Hoe heten de lijnen van het rooster in een assenstelsel?',[/rooster\s*lijn/],'roosterlijnen','De lijnen van het rooster heten <b>roosterlijnen</b>.'),
+  ()=>txt('Hoe heten de snijpunten van de roosterlijnen?',[/rooster\s*punt/],'roosterpunten','De snijpunten van de roosterlijnen heten <b>roosterpunten</b>.'),
+  ()=>mc('Punt K heeft coördinaten K(3, −2). Hoe heet het getal 3?','x-coördinaat',['y-coördinaat','oorsprong','hoofdletter'],'Het eerste getal is de <b>x-coördinaat</b>. Het tweede getal is de y-coördinaat.'),
+  ()=>mc('Punt K heeft coördinaten K(3, −2). Hoe heet het getal −2?','y-coördinaat',['x-coördinaat','oorsprong','roosterlijn'],'Het tweede getal is de <b>y-coördinaat</b>.'),
+  ()=>mc('Wat zijn de coördinaten van de oorsprong?','(0, 0)',['(1, 1)','(0, 1)','(1, 0)'],'De oorsprong ligt op de x-as én op de y-as. Dus (0, 0).'),
+  ()=>mc('Punt K heeft coördinaten K(3, −2). Hoe loop je vanuit O naar K?','3 naar rechts en 2 omlaag',['3 omhoog en 2 naar links','2 naar rechts en 3 omlaag','3 naar links en 2 omlaag'],'Je gaat vanuit O eerst 3 naar rechts (x) en daarna 2 omlaag (want −2).'),
+  ()=>{const a=R(1,5);return mc('Welk punt ligt op de y-as?',`(0, ${a})`,[`(${a}, 0)`,`(${a}, ${a})`,`(−${a}, 1)`],'Op de y-as is de x-coördinaat 0.');},
+  ()=>{const a=R(1,5);return mc('Welk punt ligt op de x-as?',`(${a}, 0)`,[`(0, ${a})`,`(${a}, ${a})`,`(1, −${a})`],'Op de x-as is de y-coördinaat 0.');},
+  ()=>mc('Welk punt is een roosterpunt?','(3, −2)',['(1½, 2)','(−1, −2½)','(½, ½)'],'Een roosterpunt heeft twee hele getallen als coördinaten. Een halve (½) maakt het geen roosterpunt.'),
+  ()=>mc('Welk punt is GEEN roosterpunt?','(−1½, 2)',['(3, −2)','(0, 4)','(−4, −4)'],'Bij (−1½, 2) is de x-coördinaat geen heel getal. Het ligt tussen twee roosterlijnen in.'),
+  ()=>mc('Welke schrijfwijze van een punt klopt?','K(3, −2)',['K 3 en −2','(K, 3, −2)','K[3 − 2]'],'Hoofdletter, haakje, x-coördinaat, komma, y-coördinaat, haakje.')
+  ];
+  return shuffle(P).slice(0,6).map(f=>f());
+}
+function rndPts(n,lim,labels='ABCDEFGH'){const out=[];while(out.length<n){const x=R(-lim,lim),y=R(-lim,lim);if(!out.some(p=>p.x===x&&p.y===y))out.push({x,y});}return out.map((p,i)=>({l:labels[i],...p}));}
+function genAflezen32(){
+  const parts=[];
+  for(let i=0;i<4;i++){
+    const pts=rndPts(3,5);const t=pts[R(0,2)];
+    const ctx={fig:{grid:COORD(5),pts,labeled:true}};
+    if(i<2)parts.push(xy(`Wat zijn de coördinaten van punt ${t.l}?`,[t.x,t.y],`Vanuit O ga je ${Math.abs(t.x)} naar ${t.x>=0?'rechts':'links'} en ${Math.abs(t.y)} ${t.y>=0?'omhoog':'omlaag'}. Dus ${t.l}${ptH(t.x,t.y)}.`,{ctx,fmt:a=>t.l+ptH(a[0],a[1])}));
+    else if(i===2)parts.push(num(`Wat is de x-coördinaat van punt ${t.l}?`,t.x,`Kijk hoeveel punt ${t.l} links of rechts van de y-as ligt: ${nl(t.x)}.`,{ctx,neg:true}));
+    else parts.push(num(`Wat is de y-coördinaat van punt ${t.l}?`,t.y,`Kijk hoeveel punt ${t.l} boven of onder de x-as ligt: ${nl(t.y)}.`,{ctx,neg:true}));
+  }
+  for(let i=0;i<2;i++){
+    const pts=[];while(pts.length<2){const x=R(-2,2)+(coin()?.5:0),y=R(-2,2)+(coin()?.5:0);if((x%1!==0||y%1!==0)&&!pts.some(p=>p.x===x&&p.y===y)&&Math.abs(x)<=3&&Math.abs(y)<=3)pts.push({x,y});}
+    pts.forEach((p,k)=>p.l='AB'[k]);const t=pts[0];
+    const ctx={fig:{grid:COORD(3),pts,labeled:true}};
+    parts.push(xy(`Wat zijn de coördinaten van punt ${t.l}? Typ een halve als 1,5 of 1½.`,[t.x,t.y],`${t.l}${ptH(t.x,t.y)}: halve stappen liggen tussen de roosterlijnen.`,{ctx,fmt:a=>t.l+ptH(a[0],a[1])}));
+  }
+  return shuffle(parts);
+}
+function pts3(){
+  const t=[];while(t.length<3){const x=R(-5,5),y=R(-5,5);if(!t.some(p=>p.x===x&&p.y===y))t.push({x,y});}
+  return t.map((p,i)=>({l:'ABC'[i],...p}));
+}
+function drawQ(pts,grid,o={}){
+  return plot(`Teken de punten ${pts.map(p=>p.l+ptH(p.x,p.y)).join(', ')} in het assenstelsel.<br><small>Tik eerst op een letter en dan op het raster.</small>`,Object.assign({mode:'labeled',targets:pts,grid,half:true,uitleg:'Ga vanuit de oorsprong eerst naar links/rechts (x) en dan omhoog/omlaag (y).'},o));
+}
+function genTekenen32(){
+  const parts=[];
+  parts.push(drawQ(pts3(),COORD(5)));
+  parts.push(drawQ(pts3(),COORD(5)));
+  const ax=[{l:'A',x:0,y:R(1,4)},{l:'B',x:-R(1,4),y:0},{l:'C',x:R(1,4),y:-R(1,4)}];
+  parts.push(drawQ(ax,COORD(5)));
+  const hp=[];while(hp.length<3){const x=R(-2,2),y=R(-3,2)+.5;if(!hp.some(p=>p.x===x&&p.y===y))hp.push({x,y});}
+  parts.push(drawQ(hp.map((p,i)=>({l:'ABC'[i],...p})),COORD(3),{snap:{x:.5,y:.5}}));
+  const q=[{l:'A',x:-R(1,4),y:R(1,4)},{l:'B',x:R(1,4),y:R(1,4)},{l:'C',x:R(1,4),y:-R(1,4)},{l:'D',x:-R(1,4),y:-R(1,4)}];
+  const p4=drawQ(q,COORD(5),{connect:'closed',pts:2});p4.q=`Teken de punten ${q.map(p=>p.l+ptH(p.x,p.y)).join(', ')}. Verbind A met B, B met C, C met D en D met A.<br><small>Tik eerst op een letter en dan op het raster. Na het nakijken zie je de lijnen.</small>`;
+  parts.push(p4);
+  const hp2=[];while(hp2.length<3){const x=R(-2,2)+(coin()?.5:0),y=R(-2,2)+(coin()?.5:0);if(!hp2.some(p=>p.x===x&&p.y===y)&&(x%1||y%1))hp2.push({x,y});}
+  parts.push(drawQ(hp2.map((p,i)=>({l:'ABC'[i],...p})),COORD(3),{snap:{x:.5,y:.5}}));
+  return shuffle(parts);
+}
+function genEigenStelsel(){
+  const mkAxis=()=>{const lo=-R(2,4),hi=R(2,4);const mid=[];while(mid.length<3){const v=R(lo+1,hi-1)+(coin()?.5:0);if(v<hi&&v>lo)mid.push(v);}return [lo,hi,...mid];};
+  const ys=shuffle(mkAxis()),xs=shuffle(mkAxis());
+  const P=ys.map((y,i)=>({l:'ABCDE'[i],x:xs[i],y}));
+  const text=`Je gaat de punten ${P.map(p=>p.l+ptH(p.x,p.y)).join(', ')} in een assenstelsel tekenen.`;
+  const ctx={text};
+  const ymn=Math.min(...ys),ymx=Math.max(...ys),xmn=Math.min(...xs),xmx=Math.max(...xs);
+  return [
+   num('Kijk naar de y-coördinaten. Wat is het kleinste getal?',ymn,'Zoek de laagste y-coördinaat. Daar moet de y-as minstens beginnen.',{ctx,neg:true}),
+   num('Kijk naar de y-coördinaten. Wat is het grootste getal?',ymx,'Zoek de hoogste y-coördinaat. Daar moet de y-as minstens doorlopen.',{ctx,neg:true}),
+   xy('De y-as moet dus lopen van … tot …',[ymn,ymx],'De y-as loopt van het kleinste tot het grootste y-getal.',{ctx,labels:['van','tot'],fmt:a=>`van ${hf(a[0])} tot ${hf(a[1])}`}),
+   xy('Kijk nu naar de x-coördinaten. De x-as moet lopen van … tot …',[xmn,xmx],'Dezelfde aanpak: kleinste en grootste x-coördinaat.',{ctx,labels:['van','tot'],fmt:a=>`van ${hf(a[0])} tot ${hf(a[1])}`}),
+   mc('Wat doe je als laatste stap bij het tekenen van een assenstelsel?','De letter O bij de oorsprong en x en y bij de assen zetten',['De punten met elkaar verbinden','De roosterlijnen wegvegen','De oorsprong verplaatsen'],'Werkschema: 1 y-as tekenen met getallen, 2 x-as tekenen met getallen, 3 de letter O en x en y erbij zetten.'),
+   mc('Er zijn punten met een negatieve x-coördinaat. Waar teken je dan de y-as?','Met genoeg ruimte links van de y-as',['Helemaal links, zonder ruimte','Onderaan het blad','Maakt niet uit'],'Negatieve x-getallen liggen links van de y-as. Houd daar genoeg ruimte voor.')
+  ];
+}
+function latticeBetween(B,C){const dx=C.x-B.x,dy=C.y-B.y,g=gcd(dx,dy),out=[];for(let k=1;k<g;k++)out.push({x:B.x+k*dx/g,y:B.y+k*dy/g});return out;}
+function lijnPlot(){
+  let B,C,tp;
+  do{const a=R(1,2),b=R(1,3),g=R(2,3),sx=coin()?1:-1,sy=coin()?1:-1;B={x:R(-4,4),y:R(-4,4)};C={x:B.x+g*a*sx,y:B.y+g*b*sy};tp=latticeBetween(B,C);}while(Math.abs(C.x)>5||Math.abs(C.y)>5||tp.length<1);
+  const pts=[{l:'B',...B},{l:'C',...C}];
+  const p=plot(`De punten B${ptH(B.x,B.y)} en C${ptH(C.x,C.y)} zijn getekend. Je verbindt B met C. Kleur alle roosterpunten tussen B en C.`,{
+    grid:COORD(5),targets:tp,presetPts:pts,preset:[{pts:[B,C],color:'#6c3ce0'}],uitleg:`Tussen B en C liggen ${tp.length} roosterpunten: ${tp.map(q=>ptH(q.x,q.y)).join(' en ')}.`});
+  return {p,tp};
+}
+function genFiguren(){
+  const hart=[[0,-3],[-4,1],[-4,2],[-3,3],[-1,3],[0,1],[1,3],[3,3],[4,2],[4,1]].map(([x,y])=>({x,y}));
+  const hartP=plot('Teken in een assenstelsel de volgende punten en verbind steeds elk punt met het vorige punt:<br><b>(0, −3), (−4, 1), (−4, 2), (−3, 3), (−1, 3), (0, 1), (1, 3), (3, 3), (4, 2), (4, 1) en (0, −3)</b>',{grid:COORD(5),targets:hart,connect:'closed',uitleg:'Als je alles goed doet, krijg je een hart.'});
+  const bal=[[-4,-2],[2,-2],[4,-1],[-2,-1],[-4,2],[2,2],[4,3],[-2,3]].map(([x,y],i)=>({l:'ABCDEFGH'[i],x,y}));
+  const balP=plot('Teken de punten A(−4, −2), B(2, −2), C(4, −1), D(−2, −1), E(−4, 2), F(2, 2), G(4, 3) en H(−2, 3).<br>Verbind daarna A met B, B met C, C met D, D met A, E met F, F met G, G met H, H met E en ook A met E, B met F, C met G en D met H. Je krijgt een balk.',{mode:'labeled',half:true,grid:COORD(5),targets:bal,edges:[[0,1],[1,2],[2,3],[3,0],[4,5],[5,6],[6,7],[7,4],[0,4],[1,5],[2,6],[3,7]],uitleg:'Een balk heeft 12 ribben.'});
+  const l1=lijnPlot(),l2=lijnPlot();
+  return [hartP,balP,l1.p,l2.p,num('Hoeveel ribben heeft een balk?',12,'Boven 4, onder 4 en 4 ribben ertussen: 12 ribben.'),
+    (()=>{const k=lijnPlot();const [b,c]=k.p.presetPts;return num(`Hoeveel roosterpunten liggen er op de lijn tussen B${ptH(b.x,b.y)} en C${ptH(c.x,c.y)}? Tel B en C zelf niet mee.`,k.tp.length,`Tussen B en C liggen ${k.tp.length} roosterpunten.`,{ctx:{fig:{grid:COORD(5),pts:k.p.presetPts,labeled:true,lines:[{pts:[b,c],color:'#6c3ce0'}]}}});})()];
+}
+function between(lo,hi){const o=[];for(let v=Math.floor(lo)+1;v<hi;v++)o.push(v);return o;}
+function rangeInfo(){
+  const a=R(0,2),b=a+R(3,5),cc=R(0,2)+(coin()?.5:0),d=cc+R(2,3)+(coin()?.5:0);
+  const xsx=between(a,b),ysy=between(cc,d);return {a,b,c:cc,d,xsx,ysy,n:xsx.length*ysy.length};
+}
+function genRooster(){
+  const mk=()=>{
+    const r=rangeInfo();
+    return {r,txt:`x-coördinaat tussen ${r.a} en ${r.b} en een y-coördinaat tussen ${hf(r.c)} en ${hf(r.d)}`};
+  };
+  const parts=[];
+  for(let i=0;i<2;i++){const k=mk();parts.push(num(`Hoeveel roosterpunten hebben een ${k.txt}?`,k.r.n,`x: ${k.r.xsx.join(', ')} (${k.r.xsx.length} waarden). y: ${k.r.ysy.join(', ')} (${k.r.ysy.length} waarden). Samen ${k.r.xsx.length} ∙ ${k.r.ysy.length} = ${k.r.n}. "Tussen" telt de grenzen niet mee.`));}
+  for(let i=0;i<2;i++){const k=mk();const tg=[];k.r.xsx.forEach(x=>k.r.ysy.forEach(y=>tg.push({x,y})));
+    parts.push(plot(`Er zijn ${k.r.n} roosterpunten met een ${k.txt}. Kleur deze punten rood.`,{grid:{style:'coord',xmin:0,xmax:k.r.b+1,ymin:0,ymax:Math.ceil(k.r.d)+1,xs:1,ys:1,w:300,h:270},targets:tg,uitleg:'Tussen betekent: de grenzen tellen niet mee.'}));}
+  for(let i=0;i<2;i++){let a=R(0,2),b=a+R(3,5),c=R(0,2),d=c+R(3,4);const n=(b-a-1)*(d-c-1);
+    parts.push(num(`Een rechthoek heeft hoekpunten (${a}, ${c}), (${b}, ${c}), (${b}, ${d}) en (${a}, ${d}). Hoeveel roosterpunten liggen binnen de rechthoek, dus niet op de rand?`,n,`Binnen: ${b-a-1} kolommen en ${d-c-1} rijen. ${b-a-1} ∙ ${d-c-1} = ${n}.`,{ctx:{fig:{grid:{style:'coord',xmin:0,xmax:b+1,ymin:0,ymax:d+1,xs:1,ys:1,w:300,h:260},pts:[{x:a,y:c},{x:b,y:c},{x:b,y:d},{x:a,y:d}],poly:true}}}));}
+  return shuffle(parts).slice(0,6);
+}
+
+'use strict';
+/* ===================== §3.3 GRAFIEKEN ===================== */
+function tempSet(month,kind='neg'){
+  const n=8;let t;
+  const uniq=t=>{const mx=Math.max(...t),mn=Math.min(...t);return t.filter(v=>v===mx).length===1&&t.filter(v=>v===mn).length===1;};
+  do{
+    if(kind==='neg'){t=[R(-1,3)];for(let i=1;i<n;i++)t.push(Math.max(-4,Math.min(5,t[i-1]+R(-2,2))));}
+    else{t=[R(14,16)];for(let i=1;i<n;i++)t.push(Math.max(12,Math.min(20,t[i-1]+R(-2,2))));}
+  }while(!uniq(t)||(kind==='neg'&&(Math.min(...t)>=0||Math.max(...t)<=0)));
+  const d0=R(8,20);const pts=t.map((y,i)=>({x:d0+i,y}));
+  const grid={style:'chart',xmin:d0,xmax:d0+n-1,ymin:Math.min(...t)-1,ymax:Math.max(...t)+1,ys:1,square:false,w:320,h:230,xlab:month,ylab:'temperatuur (°C)',zaag:kind==='pos'?'y':undefined};
+  const twice=[...new Set(t)].filter(v=>t.filter(w=>w===v).length===2);
+  return {d0,t,pts,grid,twice,month,ctx:{text:`In de grafiek zie je de minimumtemperatuur van een aantal dagen in ${month}.`,fig:{grid,pts,line:true}}};
+}
+function fietsData(){
+  const n=8,p=R(2,5);const y=[0];for(let i=1;i<n;i++)y.push(i===p?y[i-1]:y[i-1]+R(2,4));
+  const pts=y.map((v,i)=>({x:i*10,y:v}));const mx=Math.ceil(y[n-1]/5)*5;
+  const grid={style:'chart',xmin:0,xmax:70,ymin:0,ymax:mx,xs:10,ys:1,lbl:{x:1,y:5},square:false,w:320,h:250,xlab:'tijd (minuten)',ylab:'afstand (km)'};
+  return {p,y,pts,grid,ctx:{text:'De grafiek hoort bij een fietstocht van Ahmed.',fig:{grid,pts,line:true}}};
+}
+function verschilUitleg(a,b){const hi=Math.max(a,b),lo=Math.min(a,b);return `${nl(hi)} − ${lo<0?'('+nl(lo)+')':nl(lo)} = ${nl(hi-lo)}. Tel de hokjes tussen de twee temperaturen.`;}
+function genAflezen33(){
+  const A=tempSet(pick(['maart','november','januari'])),B=fietsData();
+  const parts=[];
+  if(A.twice.length){const T=A.twice[0];const ds=A.pts.filter(p=>p.y===T).map(p=>p.x);parts.push(nums(`Op welke twee dagen was de minimumtemperatuur ${nl(T)} °C?`,ds,`Zoek ${nl(T)} op de verticale as en lees de twee dagen af.`,{ctx:A.ctx}));}
+  else parts.push(mc('Wat staat er bij de horizontale as?',A.month,['temperatuur (°C)','tijdstip (uur)','dag in mei'],'Bij de horizontale as staat de dag in '+A.month+'. Bij de verticale as staat de temperatuur (°C).',{ctx:A.ctx}));
+  const mn=Math.min(...A.t);parts.push(num('Wat is de laagste temperatuur in deze dagen?',mn,'Zoek het laagste punt van de grafiek en kijk links op de verticale as.',{ctx:A.ctx,post:'°C',neg:true}));
+  let i=R(0,7),j=R(0,7);while(j===i||A.t[i]===A.t[j])j=R(0,7);if(i>j)[i,j]=[j,i];
+  parts.push(num(`Hoe groot is het verschil tussen de minimumtemperaturen van ${A.pts[i].x} en ${A.pts[j].x} ${A.month}?`,Math.abs(A.t[i]-A.t[j]),verschilUitleg(A.t[i],A.t[j]),{ctx:A.ctx,post:'°C'}));
+  parts.push(num('Hoeveel kilometer heeft Ahmed in totaal gefietst?',B.y[7],'Kijk naar het laatste punt van de grafiek.',{ctx:B.ctx,post:'km'}));
+  parts.push(num('Ahmed heeft één keer pauze gehouden. Hoelang duurde zijn pauze?',10,'Tijdens de pauze verandert de afstand niet: de grafiek loopt daar horizontaal.',{ctx:B.ctx,post:'minuten'}));
+  parts.push(xy('Welke coördinaten horen bij het einde van de pauze?',[B.p*10,B.y[B.p]],'Het einde van de pauze is het rechter punt van het horizontale stuk.',{ctx:B.ctx,fmt:a=>pt(a[0],a[1])}));
+  return parts;
+}
+const MEAN=[
+ {x:'tijdstip (uur)',y:'temperatuur (°C)',s:(x,y)=>`Om ${x} uur is de temperatuur ${nl(y)} °C.`,xr:[1,23],yr:[-3,20],half:1},
+ {x:'tijd (minuten)',y:'aantal punten',s:(x,y)=>`Na ${x} minuten spelen heeft Sara een score van ${nl(y)} punten.`,xr:[1,8],yr:[-20,50]},
+ {x:'tijd (minuten)',y:'afstand (km)',s:(x,y)=>`Na ${x} minuten heeft Ahmed ${nl(y)} km gefietst.`,xr:[1,6],step:10,yr:[2,25]},
+ {x:'leeftijd (maanden)',y:'gewicht (kg)',s:(x,y)=>`Als Julia ${x} maanden oud is, weegt ze ${nl(y)} kg.`,xr:[1,6],yr:[3,7],half:1},
+ {x:'tijdstip (uur)',y:'aantal zeehonden',s:(x,y)=>`Om ${x} uur zijn er ${nl(y)} zeehonden in het water.`,xr:[11,16],yr:[1,12]},
+ {x:'dag in maart',y:'minimumtemperatuur (°C)',s:(x,y)=>`Op ${x} maart is de minimumtemperatuur ${nl(y)} °C.`,xr:[10,25],yr:[-3,6]},
+];
+function meanQ(c,o={}){
+  c=c||pick(MEAN);const st=c.step||1;let x=R(c.xr[0],c.xr[1])*st,y=R(c.yr[0],c.yr[1]);if(c.half&&coin())y+=.5;
+  if(Math.abs(x-y)<1e-9)y+=2;
+  const right=c.s(x,y);
+  const w=[c.s(y,x),c.s(x,y+2),c.s(x+st,y)].filter(s=>s!==right);
+  return mc(`Op de horizontale as staat <b>${c.x}</b> en op de verticale as staat <b>${c.y}</b>. Wat betekent het punt ${pt(x,y)}?`,right,w,`Het eerste getal hoort bij de horizontale as (${c.x}), het tweede bij de verticale as (${c.y}).`,o);
+}
+function harmanQ(o={}){
+  const T=o.T!=null?o.T:3,nm=pick(['Harman','Lotte','Sem','Noor']);
+  return mc(`${nm} zegt: "Het is deze dagen niet warmer geweest dan ${T} °C." Wat vind je van deze uitspraak?`,`${nm} heeft geen gelijk. De grafiek laat de minimumtemperaturen zien. Overdag was het warmer.`,[`${nm} heeft gelijk, want het hoogste punt is ${T} °C.`,`${nm} heeft gelijk, want het was nooit warm.`,`${nm} heeft geen gelijk, want het was ${T+10} °C.`],'Let op de titel: het gaat om de minimumtemperatuur. De maximumtemperatuur is hoger.',o);
+}
+function zaagQ(o={}){
+  const P=o.set||tempSet('mei','pos');
+  return mc('Op de verticale as zie je bij de 0 een zigzag. Dat heet een zaagtand. Waarom is die gebruikt?','Het stuk van 0 tot het eerste getal is weggelaten, zodat de grafiek beter past',['De temperatuur was daar 0 °C','De as is daar kapot','Daar liggen de laagste punten'],'Met een zaagtand laat je een stuk van de as weg dat je niet nodig hebt.',Object.assign({ctx:P.ctx},o));
+}
+function genBetekenis33(){
+  const ms=shuffle(MEAN).slice(0,3).map(c=>meanQ(c));
+  const P=tempSet('mei','pos');const mxi=P.t.indexOf(Math.max(...P.t));
+  const win=[-100,-200,300,500,600].map(v=>v+R(-1,1)*100);
+  const winQ=(()=>{const v=-R(1,3)*100;return mc(`Een bloemenwinkel maakt op een dag ${nl(v)} euro winst. Wat betekent dat?`,`De winkel heeft ${-v} euro verlies gemaakt`,[`De winkel heeft ${-v} euro verdiend`,'De winkel was die dag dicht','Er zijn '+(-v)+' bloemen verkocht'],'Een negatieve winst is verlies: er ging meer geld uit dan erin kwam.');})();
+  const extra=shuffle([harmanQ({ctx:tempSet('maart').ctx}),zaagQ({set:P}),winQ]).slice(0,2);
+  return shuffle([...ms,...extra,xy('Welke coördinaten horen bij de hoogste temperatuur?',[P.pts[mxi].x,P.t[mxi]],'Zoek het hoogste punt. Lees eerst de dag af (horizontaal) en dan de temperatuur (verticaal).',{ctx:P.ctx,fmt:a=>pt(a[0],a[1])})]);
+}
+function genGlobaal(){
+  const shapes=(right,wr_)=>{const opts=[right,...wr_];return opts.map(gSvg);};
+  const sq=(q,right,wrongs,u)=>{const o=mc(q,gSvg(right),wrongs.map(gSvg),u);return o;};
+  const P=[
+   ()=>sq('Mehmet verdient elke week hetzelfde bedrag. Welke globale grafiek hoort bij het totale bedrag dat hij verdient?','up',['upoff','down','flat'],'Hij begint met € 0 en er komt steeds hetzelfde bij: een stijgende rechte lijn vanaf 0.'),
+   ()=>sq('Esila huurt een mountainbike. Ze betaalt een vast bedrag en een bedrag per uur. Welke globale grafiek hoort bij het bedrag dat Esila betaalt?','upoff',['up','down','flat'],'Door het vaste bedrag begint de grafiek boven 0. Daarna stijgt hij.'),
+   ()=>sq('Lotte pompt de vijver leeg. Welke globale grafiek hoort bij de hoogte van het water?','down',['up','upoff','flat'],'Het water wordt steeds minder: de grafiek is dalend.'),
+   ()=>sq('Luuk fietst naar school. Bij een brug moet hij even stilstaan. Welke globale grafiek hoort bij de afstand die Luuk heeft afgelegd?','pause',['up','hill','down'],'Als Luuk stilstaat, verandert de afstand niet. De grafiek is daar horizontaal (constant).'),
+   ()=>sq('Je fietst de hele tijd met dezelfde snelheid. Welke globale grafiek hoort bij je snelheid?','flat',['up','down','hill'],'Dezelfde snelheid betekent: de grafiek blijft gelijk (constant).'),
+   ()=>sq('Je loopt naar de winkel en meteen weer terug naar huis. Welke globale grafiek hoort bij je afstand tot huis?','hill',['up','valley','flat'],'Eerst wordt de afstand groter (stijgend), daarna weer kleiner (dalend).'),
+   ()=>mc('Wat is een globale grafiek?','Een grafiek zonder getallen bij de assen. Je let op de vorm, de titel en wat bij de assen staat.',['Een grafiek met heel precieze getallen','Een grafiek van de hele wereld','Een tabel met regelmaat'],'Globaal betekent: niet precies. Je kijkt alleen naar de vorm.'),
+   ()=>mc('Een deel van een grafiek gaat omhoog. Hoe heet dat?','stijgend',['dalend','constant','lineair'],'Omhoog = stijgend, omlaag = dalend, horizontaal = constant.'),
+   ()=>mc('Een deel van een grafiek loopt horizontaal. Wat betekent dat?','De waarde blijft gelijk (constant)',['De waarde wordt groter','De waarde wordt kleiner','De grafiek is fout'],'Horizontaal = constant: de waarde verandert niet.'),
+   ()=>mc('De grafiek van de snelheid van Merel gaat eerst omhoog, loopt dan horizontaal en gaat daarna omlaag. Wat doet Merel?','Ze gaat steeds sneller, fietst dan even met dezelfde snelheid en gaat daarna langzamer',['Ze fietst een berg op, staat stil en fietst naar beneden','Ze staat eerst stil en gaat daarna steeds sneller','Ze fietst de hele tijd even snel'],'Omhoog = sneller, horizontaal = zelfde snelheid, omlaag = langzamer.'),
+   ()=>mc('In een grafiek van de <b>afstand</b> tegen de tijd loopt een stuk horizontaal. Wat betekent dat?','Je staat stil (pauze)',['Je fietst heel hard','Je gaat terug naar huis','Je fietst met dezelfde snelheid'],'De afstand verandert niet, dus je beweegt niet.'),
+   ()=>mc('In een grafiek van de <b>snelheid</b> tegen de tijd loopt een stuk horizontaal. Wat betekent dat?','Je gaat met dezelfde snelheid',['Je staat stil','Je gaat steeds sneller','Je remt af'],'De snelheid verandert niet. Je beweegt wel, maar even snel.'),
+   ()=>sq('Tao spaart elke maand wat geld. Op een dag geeft ze in één keer een groot deel uit. Welke globale grafiek past?','stopgo',['valley','down','flat'],'Steeds een beetje omhoog, en bij het uitgeven gaat de grafiek in één keer omlaag. Kijk welke grafiek stijgt.')
+  ];
+  // de spaargeld-vraag gebruikt geen perfecte vorm; vervang door een eenduidige
+  P[12]=()=>sq('Een kaars brandt rustig op. Welke globale grafiek hoort bij de lengte van de kaars?','down',['up','flat','hill'],'De kaars wordt korter: de grafiek is dalend.');
+  return shuffle(P).slice(0,6).map(f=>f());
+}
+function stepOf(xs){return xs[1]-xs[0];}
+function genTabel33(){
+  const ctxs=[pickInc(true),pickInc(true),pickInc(true),pickInc(false),pick(DEC),pick(DEC)];
+  return ctxs.map((c,k)=>{const o=inst(c);const blank=k%3===2;const st=stepOf(o.xs);const inc=r2(o.per*st);
+    return table(`${o.story()} ${blank?'Vul de tabel in.':'Vul de tabel verder in.'}`,o.tbl(blank),`Onder de 0 staat ${o.fv(o.vast)}${o.money?'':' '+o.u}. De stappen in de tabel zijn ${st}, dus er komt steeds ${o.fv(inc)} ${o.dec?'af':'bij'} (${st} ∙ ${o.fv(o.per)}).`,{});});
+}
+function plotFor(o,q,extra={}){
+  const ys=o.xs.map(o.f);const ax=axisFor(ys);const st=stepOf(o.xs);
+  const sy=ax.step>=5?ax.step/5:(ys.every(Number.isInteger)?1:0.5);
+  const allOn=ys.every(v=>Math.abs(v/sy-Math.round(v/sy))<1e-9);
+  const grid={style:'chart',xmin:0,xmax:o.xs[o.xs.length-1],xs:st,ymin:ax.min,ymax:ax.max,ys:ax.step,square:false,w:300,h:260,xlab:o.c.v,ylab:o.c.out};
+  return plot(q,Object.assign({grid,targets:o.xs.map(x=>({x,y:o.f(x)})),connect:'line',snap:{x:st,y:sy},tol:{x:0,y:allOn?0:sy/2},uitleg:'Teken eerst alle punten uit de tabel. De lijn gaat door het eerste en het laatste punt; alle andere punten liggen erop.'},extra));
+}
+function genGrafiekLin(){
+  const parts=[];
+  [pickInc(true),pickInc(false),pick(DEC)].forEach(c=>{const o=inst(c);parts.push(plotFor(o,`${o.story()} Teken de grafiek bij de tabel. Tik op de plekken van de punten.`,{ctx:{table:o.ctxTable()}}));});
+  const o=inst(pickInc(true));
+  const th=[
+   mc('Bij een tabel met regelmaat is de grafiek een …','rechte lijn',['kromme lijn','zaagtand','globale grafiek'],'Bij een tabel met regelmaat komt er steeds hetzelfde bij. Dan is de grafiek een rechte lijn.'),
+   mc('Hoe heet een grafiek die een rechte lijn is?','lineaire grafiek',['globale grafiek','assenstelsel','roosterlijn'],'Een rechte grafiek heet een <b>lineaire grafiek</b>.'),
+   mc('Hoe teken je de grafiek bij een tabel met regelmaat het handigst?','Teken de punten, trek een rechte lijn door het eerste en laatste punt en controleer de andere punten',['Verbind de punten met een bochtige lijn','Teken alleen het eerste punt','Teken de lijn uit je hoofd zonder punten'],'Gebruik je geodriehoek. Als je het goed doet, liggen alle punten op de lijn.'),
+   xy(`${o.story()} Onder de 0 in de tabel staat ${o.fv(o.vast)}. Welk punt hoort daarbij?`,[0,o.vast],'Bij 0 hoort het vaste bedrag. Dus het punt (0, '+o.fv(o.vast)+').',{fmt:a=>pt(a[0],a[1])}),
+   mc('Welke as hoort bij de bovenste rij van de tabel?','de horizontale as',['de verticale as','geen van beide','allebei'],'Bovenste rij = horizontale as. Onderste rij = verticale as.')
+  ];
+  return parts.concat(shuffle(th).slice(0,3));
+}
+function genMeet(){
+  const parts=[];
+  // zeehonden of vogels
+  {const c=pick([{t:'zeehonden in het water',yl:'aantal zeehonden'},{t:'vogels op het strand',yl:'aantal vogels'},{t:'fietsen in de stalling',yl:'aantal fietsen'}]);
+   let ys;do{ys=r10(0,5).map(()=>R(0,12));}while(new Set(ys).size<6);
+   const x0=R(9,12),xs=r10(x0,x0+5),T=xs.map((x,i)=>({x,y:ys[i]}));
+   const grid={style:'chart',xmin:x0-1,xmax:x0+6,ymin:0,ymax:Math.ceil((Math.max(...ys)+1)/2)*2,xs:1,ys:1,lbl:{x:1,y:2},square:false,w:300,h:250,xlab:'tijdstip (uur)',ylab:c.yl};
+   const tb={head:['tijdstip (uur)',c.yl],xs,ys};
+   parts.push(plot(`In de tabel zie je het aantal ${c.t}. Teken de grafiek bij de tabel.`,{ctx:{table:tb},grid,targets:T,connect:'line',uitleg:'Elk getallenpaar uit de tabel is een punt. Verbind de punten.'}));
+   const k=R(0,5);parts.push(num(`Op welk tijdstip waren er ${ys[k]} ${c.t.split(' ')[0]}?`,xs[k],'Zoek het getal op de verticale as en lees het tijdstip af.',{ctx:{table:tb,fig:{grid,pts:T,line:true}},post:'uur'}));}
+  // winst met dagen
+  {const days=['ma','di','wo','do','vr'];let ys;do{ys=days.map(()=>R(-3,6)*100);}while(new Set(ys).size<5||!ys.some(v=>v<0));
+   const ax=axisFor(ys,false);const grid={style:'chart',xmin:0,xmax:6,ymin:Math.min(ax.min,-100),ymax:ax.max,xs:1,ys:100,xnames:days,square:false,w:300,h:260,xlab:'dag',ylab:'winst (€)'};
+   const T=ys.map((y,i)=>({x:i+1,y}));const tb={head:['dag','winst (€)'],xs:[1,2,3,4,5],ys,xfmt:x=>days[x-1]};
+   parts.push(plot('In de tabel zie je de winst van een bloemenwinkel. Teken de grafiek bij de tabel.',{ctx:{table:tb},grid,targets:T,connect:'line',snap:{x:1,y:100},uitleg:'Negatieve winst teken je onder de 0.'}));
+   const mi=ys.indexOf(Math.max(...ys));
+   parts.push(mc('Op welke dag was de winst het hoogst?',days[mi],days.filter((_,i)=>i!==mi).slice(0,3),'Zoek het hoogste punt van de grafiek.',{ctx:{fig:{grid,pts:T,line:true}}}));}
+  // temperatuur per uur
+  {let ys;do{ys=[0,4,8,12,16,20,24].map(()=>R(-3,9));}while(ys.filter(v=>v===Math.max(...ys)).length>1);
+   const xs=[0,4,8,12,16,20,24],T=xs.map((x,i)=>({x,y:ys[i]}));
+   const grid={style:'chart',xmin:0,xmax:24,ymin:Math.min(-4,Math.min(...ys)-1),ymax:Math.max(...ys)+1,xs:2,ys:1,lbl:{x:2,y:1},square:false,w:320,h:250,xlab:'tijdstip (uur)',ylab:'temperatuur (°C)'};
+   const tb={head:['tijdstip (uur)','temperatuur (°C)'],xs,ys};
+   parts.push(plot('In de tabel zie je de temperatuur op een dag in november. Teken de grafiek bij de tabel.',{ctx:{table:tb},grid,targets:T,connect:'line',uitleg:'Let op: op de horizontale as zijn de stappen 2 uur.'}));
+   const mi=ys.indexOf(Math.max(...ys));
+   parts.push(num('Om hoeveel uur was het het warmst?',xs[mi],'Zoek het hoogste punt.',{ctx:{fig:{grid,pts:T,line:true}},post:'uur'}));}
+  return parts;
+}
+
+/* ===================== §3.4 WOORDFORMULE ===================== */
+function genWoord1(){
+  const o=inst(pickInc(true)),ord=coin(),F=o.W(ord),ctx={text:`${o.c.intro} Hierbij hoort de woordformule<br><b>${F}</b>`};
+  const o2=inst(pickInc(true)),F2=o2.W(!ord),ctx2={text:`${o2.c.intro} Hierbij hoort de woordformule<br><b>${F2}</b>`};
+  return [
+    num('Wat is het vaste bedrag?',o.vast,'Het vaste bedrag is het getal dat er altijd bij komt, zonder keer.',{ctx,pre:'€'}),
+    num(`Wat is het bedrag per ${o.c.eenh}?`,o.per,`Het bedrag per ${o.c.eenh} staat vóór het keerteken: ${o.fv(o.per)} ∙ ${o.c.v}.`,{ctx,pre:'€'}),
+    mc('Wat zijn de variabelen in deze woordformule?',`${o2.c.out} en ${o2.c.v}`,[`${o2.fv(o2.vast)} en ${o2.fv(o2.per)}`,`alleen ${o2.c.v}`,`${o2.c.out} en ${o2.fv(o2.per)}`],'Variabelen zijn de woorden die kunnen veranderen. De getallen zijn vast.',{ctx:ctx2}),
+    mc('Wat betekent het teken ∙ in een woordformule?','keer (×)',['plus','min','gedeeld door'],'Het teken ∙ betekent keer.'),
+    mc('Verzendkosten zijn altijd hetzelfde, hoeveel je ook bestelt. Hoe heet zo\'n bedrag?','vast bedrag',['bedrag per stuk','variabele','woordformule'],'Een bedrag dat altijd hetzelfde blijft is een <b>vast bedrag</b>.'),
+    mc(`Je vult een ander getal in voor ${o2.c.v}. Wat verandert er dan ook?`,o2.c.out,['het vaste bedrag',`het bedrag per ${o2.c.eenh}`,'niets'],`${o2.c.v} en ${o2.c.out} zijn de variabelen: als de één verandert, verandert de ander mee.`,{ctx:ctx2})
+  ];
+}
+function xFor(o){const st=stepOf(o.xs);return st>=5?R(1,9)*st+(st>=100?0:R(0,1)*st):R(3,14);}
+function genWoord2(){
+  return [0,1,2,3,4,5].map(k=>{const o=inst(k<4?pickInc(true):pickInc(false)),x=xFor(o),ord=coin();
+    return num(`${o.c.intro} Hierbij hoort de woordformule<br><b>${o.W(ord)}</b><br>Bereken de ${o.nm} als ${o.c.v} = ${x}.`,o.f(x),`${o.calc(x)} = ${o.fv(o.f(x))}. Eerst keer, dan plus.`,o.ansOpts());});
+}
+function genWoord3(){
+  const parts=[];
+  for(let k=0;k<6;k++){const o=inst(pick(DEC)),F=o.W(),ctx={text:`${o.c.intro} Hierbij hoort de woordformule<br><b>${F}</b>`},ao=Object.assign(o.ansOpts(),{ctx});
+    if(k===0)parts.push(num(`Hoeveel is de ${o.nm} aan het begin?`,o.vast,'Aan het begin is '+o.c.v+' = 0. Dan blijft alleen het eerste getal over.',ao));
+    else if(k===1)parts.push(num(`Met hoeveel neemt de ${o.nm} per ${o.c.eenh} af?`,o.per,'Het getal vóór het keerteken gaat er per '+o.c.eenh+' af.',Object.assign({},ao,{neg:false})));
+    else if(k<4){const x=pick(o.xs.slice(1));parts.push(num(`Bereken de ${o.nm} als ${o.c.v} = ${x}.`,o.f(x),`${o.calc(x)} = ${o.fv(o.f(x))}. Eerst keer, dan min.`,ao));}
+    else{const st=stepOf(o.xs);let x0=pick(o.xs.slice(1,-1));if(st===1&&coin())x0+=0.5;const y=o.f(x0);
+      parts.push(num(`Bij welke ${o.c.v} is de ${o.nm} ${o.fv(y)} ${o.u}?`,x0,`Er moet ${o.fv(o.vast)} − ${o.fv(y)} = ${o.fv(o.vast-y)} af. Dat is ${o.fv(o.vast-y)} : ${o.fv(o.per)} = ${nl(x0)}.`,{ctx}));}
+  }
+  return parts;
+}
+function wrongW(o){const c=o.c;return [`${c.out} = ${o.fv(o.per)} + ${o.fv(o.vast)} ∙ ${c.v}`,`${c.out} = ${o.fv(r2(o.vast+o.per))} ∙ ${c.v}`,o.dec?`${c.out} = ${o.fv(o.vast)} + ${o.fv(o.per)} ∙ ${c.v}`:`${c.out} = ${o.fv(o.vast)} − ${o.fv(o.per)} ∙ ${c.v}`];}
+function genWoord4(){
+  const parts=[];
+  for(let k=0;k<3;k++){const o=inst(k<2?pickInc(true):pick(DEC));parts.push(mc(`${o.story()} Welke woordformule hoort hierbij?`,o.W(false),wrongW(o),'Het vaste bedrag (of de beginwaarde) staat los. Het bedrag per '+o.c.eenh+' staat vóór ∙ '+o.c.v+'.'));}
+  for(let k=0;k<2;k++){const o=inst(pickInc(true));const st=stepOf(o.xs);const x=st>=5?R(2,8)*st:R(3,12);
+    parts.push(num(`${o.c.intro} Hierbij hoort de woordformule <b>${o.W(false)}</b>. Iemand betaalt € ${o.fv(o.f(x))}. Hoeveel is ${o.c.v}?`,x,`Haal eerst het vaste bedrag eraf: ${o.fv(o.f(x))} − ${o.fv(o.vast)} = ${o.fv(r2(o.f(x)-o.vast))}. Deel door ${o.fv(o.per)}: ${x}.`));}
+  {const o=inst(pickInc(true)),x=R(5,12);parts.push(mc(`${o.c.intro} Hierbij hoort ${o.W(false)}. Welke berekening hoort bij ${x} (${o.c.v})?`,`${o.fv(o.vast)} + ${o.fv(o.per)} ∙ ${x}`,[`(${o.fv(o.vast)} + ${o.fv(o.per)}) ∙ ${x}`,`${o.fv(o.per)} + ${o.fv(o.vast)} ∙ ${x}`,`${o.fv(o.vast)} ∙ ${o.fv(o.per)} + ${x}`],'Je vult het getal in op de plaats van de variabele.'));}
+  return shuffle(parts);
+}
+
+/* ===================== §3.5 FORMULES MET LETTERS ===================== */
+function genLetter1(){
+  const o=inst(pickInc()),c=o.c,L=c.L,x=R(3,9),k=R(2,9);
+  const P=[
+   mc(`Wat betekent <b>${k}${L}</b>?`,`${k} ∙ ${L}`,[`${k} + ${L}`,`${k} − ${L}`,`${L} : ${k}`],`Tussen een getal en een letter staat een onzichtbaar keerteken: ${k}${L} betekent ${k} ∙ ${L}.`),
+   mc(`Je mag het keerteken voor een letter weglaten. Hoe schrijf je <b>${c.out} = ${o.fv(o.vast)} + ${o.fv(o.per)} ∙ ${L}</b> korter?`,`${c.out} = ${o.fv(o.vast)} + ${o.fv(o.per)}${L}`,[`${c.out} = ${o.fv(o.vast)}${o.fv(o.per)}${L}`,`${c.out} = (${o.fv(o.vast)} + ${o.fv(o.per)})${L}`,`${c.out} = ${o.fv(o.vast)} + ${L}`],'Alleen het keerteken tussen het getal en de letter valt weg.'),
+   mc(`Bij de woordformule <b>${o.W(false)}</b> gebruik je de letter ${L} in plaats van ${c.v}. Welke formule krijg je?`,o.Lf(false),[`${c.out} = ${o.fv(o.vast)}${L} + ${o.fv(o.per)}`,`${c.out} = ${o.fv(o.vast)} + ${L}`,`${L} = ${o.fv(o.vast)} + ${o.fv(o.per)} ∙ ${c.out}`],'Je vervangt alleen de woorden '+c.v+' door de letter '+L+'.'),
+   mc(`<b>${o.Lf(false)}</b><br>Wat stelt de letter ${L} voor?`,c.v,[o.money?'het vaste bedrag':'de beginwaarde',c.out,`het bedrag per ${c.eenh}`],'In de opgave staat altijd: "Hierin is '+L+' …". Hier is '+L+' '+c.v+'.'),
+   mc('Je vult voor de letter een ander getal in. Wat gebeurt er?','De uitkomst van de formule verandert ook',['Er gebeurt niets','Het vaste bedrag verandert','De letter verdwijnt'],'De letter en de uitkomst zijn variabelen: ze veranderen samen.'),
+   mc(`<b>${o.Lf(false)}</b><br>Wat vul je in voor ${L} = ${x}?`,o.calc(x),[`${o.fv(o.vast)} + ${o.fv(o.per)}${x}`,`(${o.fv(o.vast)} + ${o.fv(o.per)}) ∙ ${x}`,`${o.fv(o.vast)} ∙ ${o.fv(o.per)} + ${x}`],`Op de plaats van ${L} komt ${x}, met het keerteken erbij: ${o.calc(x)}.`)
+  ];
+  return shuffle(P);
+}
+function genLetter2(){
+  const parts=[];
+  for(let k=0;k<6;k++){const o=inst(pickInc(k%2===0)),c=o.c,ord=coin(),F=`<b>${o.Lf(ord)}</b>. Hierin is ${c.L} ${c.v}.`,ctx={text:`${c.intro} Hierbij hoort de formule ${F}`},ao=Object.assign(o.ansOpts(),{ctx});
+    if(k===0)parts.push(num(o.money?'Wat is het vaste bedrag?':`Hoeveel was de ${o.nm} aan het begin?`,o.vast,`Aan het begin is ${c.L} = 0, dus ${o.fv(o.per)} ∙ 0 = 0. Er blijft ${o.fv(o.vast)} over.`,ao));
+    else if(k===1)parts.push(num(`Hoeveel komt er per ${c.eenh} bij?`,o.per,`Het getal voor de letter ${c.L} komt er per ${c.eenh} bij.`,ao));
+    else{const x=xFor(o);parts.push(num(`Bereken de ${o.nm} voor ${c.L} = ${x}.`,o.f(x),`${o.calc(x)} = ${o.fv(o.f(x))}.`,ao));}
+  }
+  return parts;
+}
+function genLetter3(){
+  const parts=[];
+  for(let k=0;k<2;k++){const o=inst(pick(DEC)),c=o.c,x=pick(o.xs.slice(1));parts.push(num(`${c.intro} Hierbij hoort <b>${o.Lf()}</b>. Hierin is ${c.L} ${c.v}.<br>Bereken de ${o.nm} voor ${c.L} = ${x}.`,o.f(x),`${o.calc(x)} = ${o.fv(o.f(x))}. Eerst keer, dan min.`,o.ansOpts()));}
+  {const s=R(5,8)*1000+500,p=R(5,9)*100+50;const b=R(2,6);
+   parts.push(mc(`Quinten bakt broden. Bij de voorraad meel hoort <b>voorraad (gram) = ${s} − ${p}b</b>. Hierin is b het aantal broden. Hoeveel gram meel heeft Quinten nodig voor één brood?`,`${p} gram`,[`${s} gram`,`${s-p} gram`,`${s+p} gram`],'Per brood gaat er '+p+' gram af. Dat is het getal voor de b.'));
+   parts.push(num(`Quinten: <b>voorraad (gram) = ${s} − ${p}b</b>. Bereken de voorraad meel als Quinten ${b} broden heeft gebakken.`,s-p*b,`${s} − ${p} ∙ ${b} = ${s-p*b}.`,{post:'gram'}));}
+  {const s=R(18,24),p=pick([2.5,3,3.5]),tp=R(2,4),tn=-pick([10,12,18,20]);
+   const F=`<b>bewaartijd (dagen) = ${s} − ${nl(p)}t</b>. Hierin is t de temperatuur in °C.`;
+   parts.push(num(`Je kunt diepvriesproducten lang bewaren. ${F}<br>In een koelkast is het ${tp} °C. Hoeveel dagen is de bewaartijd?`,r2(s-p*tp),`${s} − ${nl(p)} ∙ ${tp} = ${nl(s-p*tp)}.`,{post:'dagen'}));
+   parts.push(num(`${F}<br>In de vriezer is het ${nl(tn)} °C. Hoeveel dagen is de bewaartijd?`,r2(s-p*tn),`${s} − ${nl(p)} ∙ ${nl(tn)} = ${s} + ${nl(-p*tn)} = ${nl(s-p*tn)}. Min keer min wordt plus!`,{post:'dagen'}));}
+  parts.push(mc('Bij de bewaartijd hoort <b>bewaartijd (dagen) = 21 − 3,5t</b>, met t de temperatuur. Bij een hogere temperatuur hoort een … bewaartijd.','kortere',['langere','even lange','negatieve'],'Hoe groter t, hoe meer er van 21 af gaat. Dus korter bewaren.'));
+  return shuffle(parts).slice(0,6);
+}
+function genLetter4(){
+  const parts=[];
+  for(let k=0;k<3;k++){const o=inst(k<2?pickInc():pick(DEC)),c=o.c;
+    parts.push(mc(`${o.story()} Hierin is ${c.L} ${c.v}. Welke formule hoort hierbij?`,o.Lf(false),[`${c.out} = ${o.fv(o.per)} + ${o.fv(o.vast)}${c.L}`,`${c.out} = ${o.fv(r2(o.vast+o.per))}${c.L}`,o.dec?`${c.out} = ${o.fv(o.vast)} + ${o.fv(o.per)}${c.L}`:`${c.out} = ${o.fv(o.vast)} − ${o.fv(o.per)}${c.L}`],'Beginwaarde of vast bedrag los, het getal per '+c.eenh+' vóór de letter.'));}
+  {const t0=R(500,600),p=R(15,20),t=R(3,8);
+   parts.push(num(`Op Jaspers fiets zit een kilometerteller. Bij de tellerstand hoort <b>tellerstand (km) = ${t0} + ${p}t</b>. Hierin is t de tijd in uren vanaf het begin van de vakantie. Wat was de tellerstand aan het begin van de vakantie?`,t0,'Aan het begin is t = 0.',{post:'km'}));
+   parts.push(num(`<b>tellerstand (km) = ${t0} + ${p}t</b>. Jasper fietst in totaal ${t} uur. Bereken de tellerstand aan het einde.`,t0+p*t,`${t0} + ${p} ∙ ${t} = ${t0+p*t}.`,{post:'km'}));}
+  {const o=inst(pickInc(false)),c=o.c;parts.push(mc(`<b>${o.Lf(false)}</b>. Hierin is ${c.L} ${c.v}. Wat betekent het getal ${o.fv(o.per)}?`,`Er komt per ${c.eenh} ${o.fv(o.per)} ${o.u} bij`,[`De ${o.nm} aan het begin is ${o.fv(o.per)} ${o.u}`,`${c.L} is altijd ${o.fv(o.per)}`,`De ${o.nm} wordt nooit meer dan ${o.fv(o.per)}`],'Het getal vóór de letter is de groei per stap.'));}
+  return shuffle(parts);
+}
+
+/* ===================== §3.6 GRAFIEK BIJ EEN FORMULE ===================== */
+function genForm1(){
+  const parts=[];
+  [pickInc(true),pickInc(false),pickInc(true),pick(DEC)].forEach(c=>{const o=inst(c);
+    parts.push(table(`<b>${o.Lf(coin()&&!o.dec)}</b>. Hierin is ${c.L} ${c.v}. Vul de tabel in.`,o.tbl(true),`Vul elk getal uit de bovenste rij in op de plaats van ${c.L}. Bijvoorbeeld ${c.L} = ${o.xs[1]}: ${o.calc(o.xs[1])} = ${o.fv(o.f(o.xs[1]))}.`));});
+  parts.push(mc('Bij welke as hoort de bovenste rij van de tabel?','de horizontale as',['de verticale as','bij de titel','bij geen enkele as'],'Bovenste rij = horizontale as.'));
+  parts.push(mc('Bij welke as hoort de onderste rij van de tabel?','de verticale as',['de horizontale as','bij de titel','bij geen enkele as'],'Onderste rij = verticale as.'));
+  return parts;
+}
+function genForm2(){
+  const AX=pick([{m:190,E:200,S:40},{m:45,E:50,S:5},{m:78,E:80,S:10},{m:24,E:25,S:5},{m:58,E:60,S:10}]);
+  const o=inst(pickInc());
+  const P=[
+   mc('Wat is stap 1 van het werkschema "Grafiek tekenen bij een formule"?','Vul de tabel in',['Teken de grafiek','Zet een titel boven de grafiek','Teken de punten'],'Werkschema: 1 tabel invullen, 2 horizontale as, 3 verticale as, 4 bij de assen schrijven waar ze over gaan, 5 punten tekenen en de grafiek, 6 titel.'),
+   mc('Wat zet je boven de grafiek?','een titel',['de formule','de oorsprong','niets'],'Zet altijd een titel boven de grafiek, bijvoorbeeld KAARS of HUURPRIJS.'),
+   mc('Wat schrijf je bij de assen?','Waar ze over gaan, bijvoorbeeld d (dagen) en bedrag (€)',['Alleen de letter x en y','De titel','De formule'],'Bij de horizontale as schrijf je de bovenste rij, bij de verticale as de onderste rij.'),
+   mc(`Het grootste getal onder in de tabel is ${AX.m}. Welke verticale as past goed?`,`van 0 tot en met ${AX.E} met stappen van ${AX.S}`,[`van 0 tot en met ${AX.E/2} met stappen van ${AX.S/ (AX.S%2?1:2)}`,`van 0 tot en met ${AX.E} met stappen van ${AX.S+3}`,`van 0 tot en met ${AX.m-10} met stappen van ${AX.S}`],`De as moet minstens tot ${AX.m} gaan en de stappen moeten even groot en handig zijn.`),
+   mc('Wat geldt voor de stappen op een as?','Ze zijn op één as allemaal even groot',['Ze worden steeds groter','Ze mogen zomaar verschillen','Er zijn geen stappen'],'De stappen per as zijn even groot.'),
+   num(`<b>${o.Lf(false)}</b>. In de bovenste rij van de tabel staan ${o.xs.join(', ')}. Tot en met welk getal moet de horizontale as lopen?`,o.xs[o.xs.length-1],'De horizontale as moet tot het grootste getal in de bovenste rij lopen.')
+  ];
+  return shuffle(P);
+}
+function genForm3(){
+  const parts=[];
+  [pickInc(true),pickInc(false),pick(DEC),pickInc(true)].forEach((c,k)=>{const o=inst(c);
+    parts.push(plotFor(o,`<b>${o.Lf(false)}</b>. Hierin is ${c.L} ${c.v}. ${k<2?'De tabel is al ingevuld.':'Maak eerst zelf een tabel voor '+c.L+' = '+o.xs.join(', ')+'.'} Teken de grafiek.`,k<2?{ctx:{table:Object.assign(o.ctxTable(),{head:[c.L+' ('+(c.v.match(/\((.*)\)/)||[0,c.v.replace('aantal ','')])[1]+')',c.out]})}}:{}));});
+  for(let k=0;k<2;k++){const o=inst(pickInc(true)),c=o.c,pts=o.xs.map(x=>({x,y:o.f(x)}));const ax=axisFor(pts.map(p=>p.y));
+    const grid={style:'chart',xmin:0,xmax:o.xs[o.xs.length-1],xs:stepOf(o.xs),ymin:0,ymax:ax.max,ys:ax.step,square:false,w:300,h:250,xlab:c.v,ylab:c.out};
+    const i=R(1,o.xs.length-1);parts.push(num(`Hieronder zie je de grafiek bij <b>${o.Lf(false)}</b>. Hoeveel is de ${o.nm} bij ${c.L} = ${o.xs[i]}?`,o.f(o.xs[i]),`Lees af of reken: ${o.calc(o.xs[i])} = ${o.fv(o.f(o.xs[i]))}.`,Object.assign(o.ansOpts(),{ctx:{fig:{grid,pts,line:true}}})));}
+  return parts;
+}
+function kaarsPair(){
+  let a,b,c,d,u0,y0;do{u0=R(2,4);y0=R(3,8);b=R(3,4);d=b-1;a=y0+b*u0;c=y0+d*u0;}while(a/b===c/d);
+  return {a,b,c,d,u0,y0};
+}
+function genForm4(){
+  const K=kaarsPair();const zI=K.a/K.b,zII=K.c/K.d;const xmax=Math.ceil(Math.max(zI,zII));
+  const grid={style:'chart',xmin:0,xmax,ymin:0,ymax:Math.ceil(K.a/2)*2,xs:1,ys:1,lbl:{x:1,y:2},square:false,w:300,h:260,xlab:'u (uren)',ylab:'lengte (cm)'};
+  const tII=[];for(let u=0;u<=xmax;u++){if(K.c-K.d*u>=0)tII.push({x:u,y:K.c-K.d*u});}
+  const F=`Kaars I: <b>lengte (cm) = ${K.a} − ${K.b}u</b>. Kaars II: <b>lengte (cm) = ${K.c} − ${K.d}u</b>. Hierin is u het aantal branduren.`;
+  const pI=[{x:0,y:K.a},{x:zI,y:0}];
+  const parts=[
+   plot(`${F}<br>De grafiek van kaars I is al getekend (blauw). Teken de punten van kaars II voor u = 0, 1, 2, … zolang de kaars nog brandt.`,{grid,targets:tII,connect:'line',preset:[{pts:pI}],uitleg:'Maak eerst een tabel voor kaars II.'}),
+   num(`${F}<br>Na hoeveel uur branden zijn de kaarsen even lang?`,K.u0,`Bij u = ${K.u0}: kaars I ${K.a} − ${K.b} ∙ ${K.u0} = ${K.y0} en kaars II ${K.c} − ${K.d} ∙ ${K.u0} = ${K.y0}. Daar snijden de grafieken elkaar.`,{post:'uur',ctx:{fig:{grid,pts:[],lines:[{pts:pI,color:'#3b82f6'},{pts:[{x:0,y:K.c},{x:zII,y:0}],color:'#ff5ca8'}]}}}),
+   mc(`${F}<br>Welke kaars brandt het langst?`,zII>zI?'Kaars II':'Kaars I',[zII>zI?'Kaars I':'Kaars II','Ze branden even lang'],`Kaars I is op na ${nl(zI)} uur en kaars II na ${nl(zII)} uur.`)
+  ];
+  const o=inst(INC.find(c=>c.id==='tuin'));const x=R(2,6);
+  parts.push(num(`Mirjam krijgt elke maand een reiskostenvergoeding en een bedrag per uur. Hierbij hoort <b>inkomsten (€) = ${o.fv(o.vast)} + ${o.fv(o.per)}t</b>. Hierin is t de tijd in uren. Hoeveel verdient Mirjam per uur?`,o.per,'Het getal voor de t.',{pre:'€'}));
+  parts.push(num(`<b>inkomsten (€) = ${o.fv(o.vast)} + ${o.fv(o.per)}t</b>. Hoeveel verdient Mirjam als zij ${x} uur werkt?`,o.f(x),`${o.calc(x)} = ${o.fv(o.f(x))}.`,{pre:'€'}));
+  {const o2=inst(pickInc(false)),c=o2.c,x0=pick(o2.xs.slice(1)),y=o2.f(x0);
+   parts.push(mc(`Welk punt ligt op de grafiek van <b>${o2.Lf(false)}</b>?`,pt(x0,y),[pt(x0,r2(y+o2.per)),pt(x0+stepOf(o2.xs),y),pt(x0,o2.vast)],`Vul ${c.L} = ${x0} in: ${o2.calc(x0)} = ${o2.fv(y)}. Dus ${pt(x0,y)}.`));}
+  return parts;
+}
+
+'use strict';
+/* ===================== WERELDEN EN LEVELS ===================== */
+const UL=a=>'<ul>'+a.map(x=>'<li>'+x+'</li>').join('')+'</ul>';
+const WORLDS=[
+ {id:'w1',title:'Wiskundig denken',sub:'Puzzelen en problemen oplossen · telt niet mee voor de toets',icon:'🧠',color:'#ff8a3d',optional:true,levels:[
+  {id:'1a',name:'Patronen',icon:'🧩',gen:genPuzzel,leer:UL(['Zoek wat er steeds gebeurt: komt er iets bij, gaat er iets af, of wordt het keer iets?','Schrijf de verschillen tussen de getallen op.','Ken de kwadraten: 1, 4, 9, 16, 25, …','Controleer: past je regel bij het hele rijtje?'])},
+  {id:'1b',name:'Problemen oplossen',icon:'🔍',gen:genProblemen,leer:UL(['<b>Lees</b>: wat weet je en wat moet je vinden?','<b>Kies een aanpak</b>: tabel maken, tekening maken, systematisch proberen, terugwerken.','<b>Reken</b> het uit.','<b>Controleer</b>: klopt je antwoord met de vraag?'])},
+  {id:'1c',name:'Logica & Murdoku',icon:'🕵️',gen:genLogica,leer:UL(['Gebruik elke aanwijzing en streep af wat niet kan.','Begin bij de aanwijzing die het meeste uitsluit.','In een mini-Murdoku staat in elke rij en elke kolom precies één persoon.'])}
+ ]},
+ {id:'w2',title:'§3.2 Assenstelsel',sub:'Coördinaten, roosterpunten en zelf tekenen',icon:'📍',color:'#6c3ce0',levels:[
+  {id:'2a',name:'Begrippen',icon:'📖',gen:genBegrippen32,leer:UL(['De <b>x-as</b> (horizontaal), de <b>y-as</b> (verticaal) en de <b>oorsprong</b> O vormen samen een <b>assenstelsel</b>.','De lijnen van het rooster heten <b>roosterlijnen</b>. De snijpunten heten <b>roosterpunten</b>.','Elk punt heeft <b>coördinaten</b>: K(3, −2). Hoofdletter, haakje, x-coördinaat, komma, y-coördinaat, haakje.','Vanuit O ga je eerst 3 naar rechts en daarna 2 omlaag.','K is een roosterpunt, want de coördinaten zijn hele getallen. L(−1½, 2) is géén roosterpunt.'])},
+  {id:'2b',name:'Coördinaten aflezen',icon:'👀',gen:genAflezen32,leer:UL(['Eerst x: hoeveel naar links (−) of rechts (+)?','Dan y: hoeveel omhoog (+) of omlaag (−)?','Op de y-as is x = 0. Op de x-as is y = 0.','Een halve stap schrijf je als ½, bijvoorbeeld (−1, 2½).'])},
+  {id:'2c',name:'Punten tekenen',icon:'✏️',gen:genTekenen32,leer:UL(['Begin altijd in de oorsprong O.','Ga eerst naar links of rechts (x), daarna omhoog of omlaag (y).','Zet de letter van het punt erbij.','Bij ½ zet je het punt precies tussen twee roosterlijnen.'])},
+  {id:'2d',name:'Zelf een assenstelsel maken',icon:'📐',gen:genEigenStelsel,leer:'<b>Werkschema Assenstelsel tekenen</b><ol><li>Onderzoek hoe lang de y-as moet worden (kleinste en grootste y-coördinaat). Teken de y-as en zet de getallen erbij.</li><li>Onderzoek hoe lang de x-as moet worden. Teken de x-as en zet de getallen erbij.</li><li>Zet de letter O bij de oorsprong en x en y bij de assen.</li></ol>Zijn er negatieve x-coördinaten? Houd dan ruimte links van de y-as.'},
+  {id:'2e',name:'Figuren & roosterpunten',icon:'❤️',gen:genFiguren,leer:UL(['Verbind de punten in de volgorde die in de opgave staat.','Roosterpunten tussen B en C: punten met hele coördinaten die precies óp de lijn liggen. B en C zelf tel je niet mee.','Een balk heeft 12 ribben.'])},
+  {id:'2f',name:'Roosterpunten tellen',icon:'🔢',gen:genRooster,leer:UL(['"Tussen 0 en 5" betekent 1, 2, 3 en 4. De grenzen tellen niet mee.','Tussen 1½ en 3½ liggen de hele getallen 2 en 3.','Tel de x-waarden en de y-waarden apart. Vermenigvuldig: 4 ∙ 2 = 8 roosterpunten.'])}
+ ]},
+ {id:'w3',title:'§3.3 Grafieken',sub:'Aflezen, globale grafieken en tekenen',icon:'📈',color:'#14b8a6',levels:[
+  {id:'3a',name:'Grafieken aflezen',icon:'🌡️',gen:genAflezen33,leer:UL(['Kijk eerst wat er bij de horizontale en de verticale as staat.','Lees vanaf de horizontale as recht omhoog naar de grafiek, en dan opzij naar de verticale as.','Verschil = grootste min kleinste. Let op min-getallen: 3 − (−2) = 5.','Horizontaal stuk in een afstand-tijd-grafiek = pauze.'])},
+  {id:'3b',name:'Wat betekent een punt?',icon:'💬',gen:genBetekenis33,leer:UL(['Bij het punt (2; 7,5) hoort: om 2 uur is de temperatuur 7,5 °C.','Het eerste getal hoort bij de horizontale as, het tweede bij de verticale as.','Staan er kommagetallen in? Dan schrijf je een puntkomma: (5,5; −12).','Een <b>zaagtand</b> op een as betekent dat een stuk van de as is weggelaten.','Let op de titel: minimumtemperatuur is niet hetzelfde als maximumtemperatuur.','Negatieve winst = verlies.'])},
+  {id:'3c',name:'Globale grafieken',icon:'〰️',gen:genGlobaal,leer:UL(['Bij een <b>globale grafiek</b> staan geen getallen bij de assen. Globaal betekent: niet precies.','Je let op de vorm van de grafiek, de titel en wat er bij de assen staat.','Omhoog = <b>stijgend</b>. Omlaag = <b>dalend</b>. Horizontaal = <b>constant</b>.','Snelheid constant = even snel bewegen. Afstand constant = stilstaan.'])},
+  {id:'3d',name:'Tabel met regelmaat',icon:'🧾',gen:genTabel33,leer:UL(['Het <b>vaste bedrag</b> zet je onder de 0 in de tabel.','Per stap komt er steeds hetzelfde bij (of af). Dat heet <b>regelmaat</b>.','Let op de stappen in de bovenste rij: stappen van 2 uur bij € 4 per uur geeft + 8.'])},
+  {id:'3e',name:'Lineaire grafiek tekenen',icon:'📏',gen:genGrafiekLin,leer:UL(['Teken alle punten uit de tabel. Onder de 0 staat 5: dat is het punt (0, 5).','Teken een rechte lijn door het eerste en het laatste punt (met je geodriehoek).','Controleer of de andere punten ook op de lijn liggen.','Bij een tabel met regelmaat is de grafiek een rechte lijn: een <b>lineaire grafiek</b>.'])},
+  {id:'3f',name:'Grafiek bij een tabel',icon:'🦭',gen:genMeet,leer:UL(['Elk getallenpaar uit de tabel is een punt.','Bovenste rij = horizontale as, onderste rij = verticale as.','Negatieve getallen teken je onder de horizontale as.','Verbind de punten in de goede volgorde.'])}
+ ]},
+ {id:'w4',title:'§3.4 Woordformule',sub:'Vast bedrag, bedrag per stuk, rekenen',icon:'🧮',color:'#ff5ca8',levels:[
+  {id:'4a',name:'Variabelen & vast bedrag',icon:'🏷️',gen:genWoord1,leer:'<b>Theorie G – Woordformule</b>'+UL(['<b>kosten (€) = 3 + 0,20 ∙ aantal foto\'s</b>','€ 3 is het <b>vaste bedrag</b> (bijvoorbeeld verzendkosten, altijd hetzelfde).','€ 0,20 is het <b>bedrag per foto</b>.','<b>kosten (€)</b> en <b>aantal foto\'s</b> zijn de <b>variabelen</b>: als je een ander getal invult voor aantal foto\'s, veranderen de kosten ook.','Het teken ∙ betekent keer.'])},
+  {id:'4b',name:'Rekenen met woordformules',icon:'➗',gen:genWoord2,leer:UL(['Vul het getal in op de plaats van de variabele.','5 foto\'s: 3 + 0,20 ∙ 5 = € 4.','Eerst keer, dan plus.','Schrijf je berekening op!'])},
+  {id:'4c',name:'Formules met min',icon:'🕯️',gen:genWoord3,leer:UL(['<b>lengte (cm) = 30 − 6 ∙ brandtijd (uren)</b>','30 is de beginwaarde: de lengte als de kaars nog niet brandt.','Per uur gaat er 6 cm af.','Na 2 uur: 30 − 6 ∙ 2 = 18 cm.','Wanneer is de kaars 3 cm? Er moet 27 af: 27 : 6 = 4,5 uur.'])},
+  {id:'4d',name:'Formule kiezen & terugrekenen',icon:'🔁',gen:genWoord4,leer:UL(['Vast bedrag + bedrag per stuk ∙ aantal.','Gaat er iets af? Dan staat er een min.','Terugrekenen: haal eerst het vaste bedrag eraf, deel daarna door het bedrag per stuk.','Controleer door je antwoord in te vullen.'])}
+ ]},
+ {id:'w5',title:'§3.5 Formules met letters',sub:'7t betekent 7 ∙ t',icon:'🔤',color:'#f59e0b',dark:true,levels:[
+  {id:'5a',name:'Letters in formules',icon:'🅰️',gen:genLetter1,leer:'<b>Theorie H – Formule met letters</b>'+UL(['<b>huurprijs (€) = 15 + 5 ∙ tijd (dagen)</b>','In plaats van tijd (dagen) gebruik je een letter, bijvoorbeeld t: huurprijs (€) = 15 + 5 ∙ t.','Je mag het keerteken voor de letter weglaten: <b>huurprijs (€) = 15 + 5t</b>.','<b>5t</b> betekent 5 ∙ t. <b>0,20a</b> betekent 0,20 ∙ a.','In de opgave staat wat de letter betekent: "Hierin is t de tijd in dagen".'])},
+  {id:'5b',name:'Getallen invullen',icon:'✍️',gen:genLetter2,leer:UL(['Voor t = 6: 15 + 5 ∙ 6 = € 45.','Voor t = 8: 15 + 5 ∙ 8 = € 55.','Bij t = 0 hou je het vaste bedrag (of de beginwaarde) over.','Het getal voor de letter komt er per stap bij.'])},
+  {id:'5c',name:'Min en negatieve getallen',icon:'❄️',gen:genLetter3,leer:UL(['<b>voorraad (gram) = 6500 − 750b</b>: per brood gaat er 750 gram af.','Na 5 broden: 6500 − 750 ∙ 5 = 2750 gram.','Een negatief getal invullen: 21 − 3,5 ∙ −10 = 21 + 35 = 56.','Min keer min wordt plus.'])},
+  {id:'5d',name:'Formules opstellen',icon:'🛠️',gen:genLetter4,leer:UL(['Begin met het vaste bedrag of de beginwaarde.','Het getal per stap zet je voor de letter.','Komt er iets bij: +. Gaat er iets af: −.','Bij de letter = 0 hoort het begin.'])}
+ ]},
+ {id:'w6',title:'§3.6 Grafiek bij een formule',sub:'Van formule via tabel naar grafiek',icon:'📊',color:'#22c55e',dark:true,levels:[
+  {id:'6a',name:'Van formule naar tabel',icon:'📋',gen:genForm1,leer:'<b>Theorie I – Van formule naar grafiek</b>'+UL(['<b>prijs (€) = 12 + 3d</b>. Voor 1 doek: 12 + 3 ∙ 1 = € 15. Dat staat in de tabel onder de 1.','Vul de getallen uit de bovenste rij om de beurt in op de plaats van de letter.','De horizontale as hoort bij de bovenste rij van de tabel.','De verticale as hoort bij de onderste rij van de tabel.'])},
+  {id:'6b',name:'Werkschema & assen',icon:'🗺️',gen:genForm2,leer:'<b>Werkschema Grafiek tekenen bij een formule</b><ol><li>Vul de tabel in.</li><li>Teken de horizontale as en zet er getallen bij.</li><li>Teken de verticale as en zet er getallen bij.</li><li>Schrijf bij de assen waar ze over gaan.</li><li>Teken de punten uit de tabel in het assenstelsel en teken de grafiek.</li><li>Zet een titel boven de grafiek.</li></ol>De stappen per as zijn even groot.'},
+  {id:'6c',name:'Grafiek tekenen',icon:'🖍️',gen:genForm3,leer:UL(['Maak eerst een tabel bij de formule.','Teken de punten en trek een rechte lijn erdoor.','Bij een formule met + gaat de grafiek omhoog, met − omlaag.','Op de grafiek kun je ook aflezen.'])},
+  {id:'6d',name:'Twee grafieken & mix',icon:'🕯️',gen:genForm4,leer:UL(['Twee grafieken in één assenstelsel: waar ze elkaar snijden, zijn de waarden gelijk.','De kaars die het laatst op 0 komt, brandt het langst.','Een punt ligt op de grafiek als de formule klopt als je het invult.'])}
+ ]}
+];
+WORLDS.forEach(w=>w.levels.forEach(l=>l.world=w));
+
+/* ===================== SPIEKBRIEF ===================== */
+const SPIEK=[
+ ['§3.2 Assenstelsel','De x-as, de y-as en de oorsprong O vormen samen een <b>assenstelsel</b>. De lijnen van het rooster heten <b>roosterlijnen</b>, de snijpunten <b>roosterpunten</b>.<br><br>Elk punt heeft <b>coördinaten</b>: K(3, −2) → vanuit O eerst 3 naar rechts, dan 2 omlaag. 3 is de x-coördinaat, −2 de y-coördinaat. K is een roosterpunt (hele getallen). L(−1½, 2) niet.<br><br><b>Werkschema Assenstelsel tekenen</b><ol><li>Onderzoek hoe lang de y-as moet worden. Teken de y-as en zet getallen erbij.</li><li>Onderzoek hoe lang de x-as moet worden. Teken de x-as en zet getallen erbij.</li><li>Zet de letter O, en x en y erbij.</li></ol>"Tussen 0 en 5" betekent 1, 2, 3, 4 (grenzen tellen niet mee).'],
+ ['§3.3 Grafieken','<b>Theorie D – Grafiek aflezen.</b> Kijk wat er bij de assen staat. Het punt (2; 7,5) betekent: om 2 uur is de temperatuur 7,5 °C. Bij kommagetallen schrijf je een puntkomma.<br>Een <b>zaagtand</b> op een as: een stuk van de as is weggelaten.<br><br><b>Theorie E – Globale grafiek.</b> Geen getallen bij de assen, je let op de vorm, de titel en de assen. Omhoog = <b>stijgend</b>, omlaag = <b>dalend</b>, horizontaal = <b>constant</b>.<br><br><b>Theorie F – Grafiek tekenen.</b> Een tabel heeft <b>regelmaat</b> als er steeds hetzelfde bijkomt. Het <b>vaste bedrag</b> zet je onder de 0. Teken alle punten, trek een rechte lijn door het eerste en het laatste punt en controleer de rest. Zo\'n rechte grafiek heet een <b>lineaire grafiek</b>.'],
+ ['§3.4 Woordformule','<b>Theorie G.</b> kosten (€) = 3 + 0,20 ∙ aantal foto\'s.<br>€ 3 = vast bedrag, € 0,20 = bedrag per foto. Kosten (€) en aantal foto\'s zijn de <b>variabelen</b>. Het teken ∙ betekent keer.<br>5 foto\'s: 3 + 0,20 ∙ 5 = € 4. Eerst keer, dan plus.<br>Met een min: lengte (cm) = 30 − 6 ∙ brandtijd (uren): per uur gaat er 6 cm af.'],
+ ['§3.5 Formules met letters','<b>Theorie H.</b> huurprijs (€) = 15 + 5 ∙ tijd (dagen) wordt huurprijs (€) = 15 + 5t, met t de tijd in dagen. Het keerteken voor een letter mag weg: 5t = 5 ∙ t, 0,20a = 0,20 ∙ a.<br>t = 6: 15 + 5 ∙ 6 = € 45.<br>Negatief invullen: 21 − 3,5 ∙ −10 = 21 + 35 = 56.'],
+ ['§3.6 Grafiek bij een formule','<b>Theorie I.</b> prijs (€) = 12 + 3d → tabel: d = 0, 1, 2, 3, 4 geeft 12, 15, 18, 21, 24.<br>Horizontale as = bovenste rij, verticale as = onderste rij. De stappen per as zijn even groot.<br><br><b>Werkschema Grafiek tekenen bij een formule</b><ol><li>Vul de tabel in.</li><li>Teken de horizontale as met getallen.</li><li>Teken de verticale as met getallen.</li><li>Schrijf bij de assen waar ze over gaan.</li><li>Teken de punten en de grafiek.</li><li>Zet een titel boven de grafiek.</li></ol>']
+];
+
+/* ===================== OEFENTOETSEN ===================== */
+function makeToets(t){
+  const O=[];
+  // Opgave 1 begrippen
+  const B=[[['Hoe heet het beginpunt van de assen in een assenstelsel?',[/oorsprong/],'de oorsprong'],['Hoe heten de lijnen van het rooster in een assenstelsel?',[/rooster\s*lijn/],'roosterlijnen']],
+           [['Hoe heten de snijpunten van de roosterlijnen?',[/rooster\s*punt/],'roosterpunten'],['Hoe heet de verticale as?',[/^(de )?y.?as$/],'de y-as']],
+           [['Hoe heet een rechte grafiek bij een tabel met regelmaat?',[/line(ai|ai)re?/,/lineair/],'lineaire grafiek'],['Hoe heet een grafiek zonder getallen bij de assen?',[/globa/],'globale grafiek']],
+           [['De x-as, de y-as en de oorsprong vormen samen een …',[/assenstelsel/],'assenstelsel'],['Hoe heet het eerste getal in K(3, −2)?',[/x.?co/],'x-coördinaat']]][t];
+  O.push({ctx:null,parts:B.map(b=>txt(b[0],b[1],b[2],'Leer de rode begrippen uit het boek.'))});
+  // Opgave 2 punten tekenen + roosterpunten tussen
+  {const a=R(1,2),b=a+1;const P=[{l:'A',x:-a,y:R(1,2)+.5},{l:'B',x:-b,y:pick([0,.5])},{l:'C',x:0,y:-R(1,2)},{l:'D',x:R(1,3),y:R(0,1)+.5},{l:'E',x:0,y:R(3,4)}];
+   const p=drawQ(P,COORD(4),{snap:{x:.5,y:.5},connect:'closed',pts:6});
+   p.q=`Teken de punten ${P.map(q=>q.l+ptH(q.x,q.y)).join(', ')} in het assenstelsel. Verbind A met B, B met C, enzovoorts. Verbind ook E met A.<br><small>Tik eerst op een letter en dan op het raster.</small>`;
+   const L=lijnPlot();L.p.pts=2;
+   O.push({ctx:null,parts:[p,L.p]});}
+  // Opgave 3 roosterpunten kleuren
+  {const r=rangeInfo();const tg=[];r.xsx.forEach(x=>r.ysy.forEach(y=>tg.push({x,y})));
+   O.push({ctx:null,parts:[plot(`Er zijn ${r.n} roosterpunten waarvan de x-coördinaat tussen ${r.a} en ${r.b} ligt en de y-coördinaat tussen ${hf(r.c)} en ${hf(r.d)} ligt. Kleur deze punten rood.`,{grid:{style:'coord',xmin:0,xmax:r.b+1,ymin:0,ymax:Math.ceil(r.d)+1,w:300,h:270},targets:tg,pts:3,uitleg:'Tussen betekent: grenzen niet meetellen.'})]});}
+  // Opgave 4 temperatuurgrafiek
+  {const month=['maart','oktober','januari','november'][t];const pos=t%2===1;const A=tempSet(pos?'mei':month,pos?'pos':'neg');
+   const mn=Math.min(...A.t),mx=Math.max(...A.t);let i=R(0,7),j=R(0,7);while(j===i||A.t[i]===A.t[j])j=R(0,7);if(i>j)[i,j]=[j,i];const k=R(0,7);const pk=A.pts[R(0,7)];
+   O.push({ctx:A.ctx,parts:[
+     num('Wat is de laagste temperatuur in deze dagen?',mn,'Laagste punt van de grafiek.',{post:'°C',neg:true}),
+     mc(`Wat betekent het punt ${pt(pk.x,pk.y)}?`,`Op ${pk.x} ${A.month} is de minimumtemperatuur ${nl(pk.y)} °C.`,[`Op ${pk.y} ${A.month} is de minimumtemperatuur ${pk.x} °C.`,`Op ${pk.x} ${A.month} is het ${nl(pk.y+2)} °C.`,`Om ${pk.x} uur is het ${nl(pk.y)} °C.`].filter((s,q,arr)=>arr.indexOf(s)===q),'Eerste getal: dag (horizontaal). Tweede getal: temperatuur (verticaal).'),
+     num(`Hoe groot is het verschil tussen de minimumtemperaturen van ${A.pts[i].x} en ${A.pts[j].x} ${A.month}?`,Math.abs(A.t[i]-A.t[j]),verschilUitleg(A.t[i],A.t[j]),{post:'°C',pts:2}),
+     num(`Wat is de minimumtemperatuur van ${A.pts[k].x} ${A.month}?`,A.t[k],'Lees af bij de dag.',{post:'°C',neg:true}),
+     pos?zaagQ({set:A,pts:2,ctx:null}):harmanQ({T:mx,pts:2})
+   ]});}
+  // Opgave 5 tabel naar grafiek (meetgegevens)
+  {const c=[{t:'zeehonden in het water',yl:'aantal zeehonden',w:'zeehonden'},{t:'vogels op het strand',yl:'aantal vogels',w:'vogels'},{t:'bezoekers in het zwembad (×10)',yl:'aantal bezoekers (×10)',w:'(×10) bezoekers'},{t:'fietsen in de stalling',yl:'aantal fietsen',w:'fietsen'}][t];
+   let ys;do{ys=r10(0,5).map(()=>R(0,12));}while(new Set(ys).size<6);
+   const x0=11,xs=r10(11,16),T=xs.map((x,i)=>({x,y:ys[i]}));
+   const grid={style:'chart',xmin:10,xmax:17,ymin:0,ymax:Math.ceil((Math.max(...ys)+1)/2)*2,xs:1,ys:1,lbl:{x:1,y:2},square:false,w:300,h:250,xlab:'tijdstip (uur)',ylab:c.yl};
+   const kk=R(0,5),mm=(kk+R(1,5))%6;
+   O.push({ctx:{text:`In de tabel zie je het aantal ${c.t}.`,table:{head:['tijdstip (uur)',c.yl],xs,ys}},parts:[
+     plot('Teken de grafiek bij de tabel.',{grid,targets:T,connect:'line',pts:2,uitleg:'Elk getallenpaar is een punt.'}),
+     num(`Op welk tijdstip waren er ${ys[kk]} ${c.w}?`,xs[kk],'Zoek het getal in de onderste rij.',{post:'uur'}),
+     mc(`Wat betekent het punt (${xs[mm]}, ${ys[mm]})?`,`Om ${xs[mm]} uur waren er ${ys[mm]} ${c.w}.`,[`Om ${ys[mm]} uur waren er ${xs[mm]} ${c.w}.`,`Om ${xs[mm]} uur waren er ${ys[mm]+3} ${c.w}.`,`Er waren ${xs[mm]+ys[mm]} ${c.w}.`],'Eerste getal hoort bij de horizontale as, tweede bij de verticale.',{pts:2})
+   ]});}
+  // Opgave 6 woordformule
+  {const o=inst(INC.filter(c=>c.money)[[0,2,7,8][t]]);const x=xFor(o);const F=o.W(t%2===0);
+   O.push({ctx:{text:`${o.c.intro} Daarbij hoort de woordformule<br><b>${F}</b>`},parts:[
+     num('Wat is het vaste bedrag?',o.vast,'Het getal zonder keer.',{pre:'€'}),
+     num(`Wat is het bedrag per ${o.c.eenh}?`,o.per,'Het getal vóór het keerteken.',{pre:'€'}),
+     num(`Bereken ${o.c.out.replace(' (€)','')} als ${o.c.v} = ${x}.`,o.f(x),`${o.calc(x)} = ${o.fv(o.f(x))}.`,{pre:'€',pts:2})
+   ]});}
+  // Opgave 7 formule met letters
+  {const c=t%2===0?INC.find(q=>q.id===['taxi','schoon','fiets','scooter'][t]):pick(DEC);const o=inst(c);
+   const x1=t%2===0?xFor(o):pick(o.xs.slice(1)),x2=t%2===0?xFor(o):pick(o.xs.slice(1).filter(v=>v!==x1));
+   O.push({ctx:{text:`${c.intro} Hierbij hoort de formule <b>${o.Lf(false)}</b>. Hierin is ${c.L} ${c.v}.`},parts:[
+     num(`Bereken de ${o.nm} voor ${c.L} = ${x1}.`,o.f(x1),`${o.calc(x1)} = ${o.fv(o.f(x1))}.`,Object.assign(o.ansOpts(),{pts:2})),
+     num(`Bereken de ${o.nm} voor ${c.L} = ${x2}.`,o.f(x2),`${o.calc(x2)} = ${o.fv(o.f(x2))}.`,Object.assign(o.ansOpts(),{pts:2})),
+     num(o.money?'Wat is het vaste bedrag?':`Hoeveel is de ${o.nm} aan het begin?`,o.vast,`Bij ${c.L} = 0.`,o.ansOpts()),
+     num(`Met hoeveel ${o.money?'euro':o.u} ${o.dec?'neemt de '+o.nm+' per '+c.eenh+' af':'nemen de '+o.nm+' per '+c.eenh+' toe'}?`,o.per,'Het getal voor de letter.',Object.assign(o.ansOpts(),{neg:false}))
+   ]});}
+  // Opgave 8 tabel + grafiek bij formule
+  {const o=inst(INC.find(c=>c.id===['folder','tuin','sponsor','taxi'][t]));
+   O.push({ctx:{text:`${o.c.intro} Hierbij hoort <b>${o.Lf(true)}</b>. Hierin is ${o.c.L} ${o.c.v}.`},parts:[
+     table('Vul de tabel in.',o.tbl(true),`Vul elk getal in op de plaats van ${o.c.L}.`,{pts:2}),
+     plotFor(o,'Teken de grafiek bij de formule.',{pts:4})
+   ]});}
+  // Opgave 9 globale grafiek
+  {const G=genGlobaal().slice(0,2);G[0].pts=1;G[1].pts=2;O.push({ctx:null,parts:G});}
+  return O;
+}
+
+'use strict';
+const KEY='wiskunde-h3-oefenwereld-v1';
+const UNLOCK_ALL=/[?&]unlock/.test(location.search);
+function load(){try{return Object.assign({lv:{},toets:{},coins:0},JSON.parse(localStorage.getItem(KEY)||'{}'));}catch(e){return {lv:{},toets:{},coins:0};}}
+let SAVE=load();
+function store(){try{localStorage.setItem(KEY,JSON.stringify(SAVE));}catch(e){}}
+const app=document.getElementById('app');
+const allLevels=()=>WORLDS.flatMap(w=>w.levels);
+const h3Levels=()=>WORLDS.filter(w=>!w.optional).flatMap(w=>w.levels);
+const stars=id=>(SAVE.lv[id]&&SAVE.lv[id].stars)||0;
+const passed=id=>stars(id)>=2;
+function unlocked(L){
+  if(UNLOCK_ALL)return true;
+  const chain=L.world.optional?L.world.levels:h3Levels();
+  const i=chain.indexOf(L);return i===0||passed(chain[i-1].id);
+}
+const toetsOpen=()=>UNLOCK_ALL||h3Levels().every(l=>passed(l.id));
+const starStr=n=>[1,2,3].map(i=>`<span class="${i<=n?'':'off'}">⭐</span>`).join('');
+function confetti(){const E=['⭐','🎉','✨','🟣','🟡','💗'];for(let i=0;i<36;i++){const s=h('span','confetti',pick(E));s.style.left=R(0,100)+'vw';s.style.animationDuration=(1.6+Math.random()*1.6)+'s';s.style.animationDelay=(Math.random()*.5)+'s';document.body.appendChild(s);setTimeout(()=>s.remove(),3800);}}
+function ask(msg,yes,cb){const ov=h('div','ov');const sh=h('div','sheet');sh.innerHTML=`<h3><span class="ico" style="background:var(--yellow)">🤔</span>Even checken</h3><p style="margin:12px 0 18px;font-size:16px">${msg}</p>`;const y=h('button','btn pink',yes);y.onclick=()=>{close();cb();};const n=h('button','btn alt','Nee, terug');n.style.marginTop='10px';n.onclick=close;sh.appendChild(y);sh.appendChild(n);ov.appendChild(sh);ov.onclick=e=>{if(e.target===ov)close();};document.body.appendChild(ov);}
+function close(){const o=document.querySelector('.ov');if(o)o.remove();}
+let cur=null;
+
+/* ---------- kaart ---------- */
+function renderHome(){
+  cur=null;window.scrollTo(0,0);app.innerHTML='';
+  const totStars=allLevels().reduce((a,l)=>a+stars(l.id),0);
+  const top=h('div','top');top.innerHTML=`<div class="logo">Wiskunde Oefenwereld<small>H3 Assenstelsel · §3.2 t/m §3.6</small></div><span class="chip-s">⭐ ${totStars}</span><span class="chip-s">🪙 ${SAVE.coins}</span>`;
+  app.appendChild(top);
+  const H=h3Levels(),done=H.filter(l=>passed(l.id)).length;
+  const hero=h('div','hero');hero.innerHTML=`<b>Op weg naar de toets!</b><p>Haal elk level met minstens 5 van de 6 goed. Dan gaat het volgende open. Als alles klaar is, gaan de 4 oefentoetsen open.</p><div class="bar"><i style="width:${Math.round(done/H.length*100)}%"></i></div><p style="margin-top:6px">${done} van ${H.length} levels gehaald</p>`;
+  app.appendChild(hero);
+  const sp=h('button','btn alt','📘 Spiekbrief: alle theorie');sp.style.marginTop='14px';sp.onclick=renderSpiek;app.appendChild(sp);
+  WORLDS.forEach(w=>{
+    const sec=h('div','world');
+    const n=w.levels.filter(l=>passed(l.id)).length;
+    const ban=h('div','wban'+(w.dark?' dark':''));ban.style.background=w.color;
+    ban.innerHTML=`<span class="big">${w.icon}</span><div><h2>${w.title}</h2><p>${w.sub}</p></div><span class="cnt">${n}/${w.levels.length}</span>`;
+    sec.appendChild(ban);
+    const path=h('div','path');
+    let curSet=false;
+    w.levels.forEach(L=>{
+      const op=unlocked(L),st=stars(L.id);
+      const isCur=op&&!passed(L.id)&&!curSet;if(isCur)curSet=true;
+      const nd=h('div','node'+(op?'':' locked')+(isCur?' current':''));
+      const dot=h('button','dot',op?L.icon:'🔒');dot.style.setProperty('--c',w.color);dot.setAttribute('aria-label',L.name);
+      dot.onclick=()=>op?openSheet(L):lockedMsg(L);
+      nd.appendChild(dot);nd.appendChild(h('div','nlab',L.name));nd.appendChild(h('div','stars',starStr(st)));
+      path.appendChild(nd);
+    });
+    sec.appendChild(path);app.appendChild(sec);
+  });
+  const ts=h('div','world');
+  const tb=h('div','wban');tb.style.background='#241553';tb.innerHTML=`<span class="big">🏆</span><div><h2>Eindbaas: oefentoetsen</h2><p>Zoals de echte toets · met cijfer</p></div>`;
+  ts.appendChild(tb);
+  const grid=h('div','tgrid');const open=toetsOpen();
+  [0,1,2,3].forEach(t=>{const c=h('button','tcard'+(open?'':' locked'));const b=SAVE.toets[t];
+    c.innerHTML=`<div class="n">${open?'📝':'🔒'}</div>Oefentoets ${t+1}<small>${open?'± 40 punten':'Eerst alle levels van §3.2 t/m §3.6'}</small>${b?`<span class="best">Beste: ${nl(b.best)}</span>`:''}`;
+    c.onclick=()=>open?startToets(t):lockedMsg(null);grid.appendChild(c);});
+  ts.appendChild(grid);app.appendChild(ts);
+  const f=h('div','foot');f.innerHTML='Je voortgang wordt op dit apparaat bewaard.<br>';
+  const rs=h('button','link','Voortgang wissen');rs.onclick=()=>ask('Weet je zeker dat je al je sterren en voortgang wilt wissen?','Ja, alles wissen',()=>{SAVE={lv:{},toets:{},coins:0};store();renderHome();});
+  f.appendChild(rs);app.appendChild(f);
+}
+function lockedMsg(L){
+  const ov=h('div','ov');const s=h('div','sheet');
+  s.innerHTML=`<h3><span class="ico" style="background:#e3dff0">🔒</span>Nog op slot</h3><p style="margin:12px 0 18px;font-size:16px">${L?'Haal eerst het level ervoor met minstens 5 van de 6 goed.':'Haal eerst alle levels van §3.2 t/m §3.6.'}</p>`;
+  const b=h('button','btn purple','Oké');b.onclick=close;s.appendChild(b);ov.appendChild(s);ov.onclick=e=>{if(e.target===ov)close();};document.body.appendChild(ov);
+}
+function openSheet(L){
+  const ov=h('div','ov');const s=h('div','sheet');
+  s.innerHTML=`<h3><span class="ico" style="background:${L.world.color}">${L.icon}</span>${L.name}</h3><div style="margin-top:6px;font-size:14px">${L.world.title} · ${starStr(stars(L.id))}</div><div class="learn"><b class="t">Onthoud</b>${L.leer}</div>`;
+  const b=h('button','btn','Start! 6 vragen');b.onclick=()=>{close();startLevel(L);};s.appendChild(b);
+  const c=h('button','link','Terug');c.style.display='block';c.style.margin='8px auto 0';c.onclick=close;s.appendChild(c);
+  ov.appendChild(s);ov.onclick=e=>{if(e.target===ov)close();};document.body.appendChild(ov);
+}
+
+/* ---------- oefenen ---------- */
+function startLevel(L){cur={mode:'level',L,qs:L.gen(),i:0,res:[]};renderQ();}
+function topBar(onX,inner){const t=h('div','ptop');const x=h('button','x','✕');x.onclick=onX;x.setAttribute('aria-label','Stoppen');t.appendChild(x);if(inner)t.appendChild(inner);return t;}
+function renderQ(){
+  window.scrollTo(0,0);app.innerHTML='';
+  const q=cur.qs[cur.i];
+  const prog=h('div','prog');cur.qs.forEach((_,k)=>{const i=h('i');if(k<cur.res.length)i.className=cur.res[k]?'ok':'no';else if(k===cur.i)i.className='now';prog.appendChild(i);});
+  app.appendChild(topBar(renderHome,prog));
+  const card=h('div','qcard');
+  const cx=renderCtx(q.ctx);if(cx)card.appendChild(cx);
+  const api=buildPart(q);card.appendChild(api.el);app.appendChild(card);
+  const bot=h('div','bottom');const inn=h('div','in');const btn=h('button','btn','Controleer');btn.disabled=true;inn.appendChild(btn);bot.appendChild(inn);app.appendChild(bot);
+  api.onchange=()=>{btn.disabled=!api.answered();};
+  btn.onclick=()=>{
+    if(btn.dataset.next){cur.i++;if(cur.i<cur.qs.length)renderQ();else finishLevel();return;}
+    const ok=api.frac()>0.999;api.lock();api.reveal();cur.res.push(ok);
+    if(ok){SAVE.coins+=10;store();}
+    const fb=h('div','fb '+(ok?'ok':'no'));
+    fb.innerHTML=`<div class="h">${ok?pick(['Goed zo! 🎉','Top! ⭐','Yes, klopt! 💪','Super! ✨'])+' <small>+10 🪙</small>':pick(['Bijna! 💡','Net niet 🙈','Oeps, kijk even mee 👀'])}</div>${ok?'':api.solText}${q.uitleg?`<div class="u">${q.uitleg}</div>`:''}`;
+    card.appendChild(fb);fb.scrollIntoView({behavior:'smooth',block:'nearest'});
+    btn.textContent=cur.i<cur.qs.length-1?'Volgende →':'Klaar!';btn.dataset.next='1';btn.className='btn '+(ok?'':'purple');
+  };
+}
+function finishLevel(){
+  const ok=cur.res.filter(Boolean).length,n=cur.res.length;
+  const st=ok===n?3:ok===n-1?2:0;const L=cur.L;
+  const prev=stars(L.id);SAVE.lv[L.id]={stars:Math.max(prev,st)};store();
+  window.scrollTo(0,0);app.innerHTML='';
+  const r=h('div','res');const c=h('div','card stack');
+  const chain=L.world.optional?L.world.levels:h3Levels();const nxt=chain[chain.indexOf(L)+1];
+  c.innerHTML=`<div class="bigstars">${st?starStr(st):'💪'}</div><h2>${st===3?'Perfect!':st===2?'Gehaald!':'Nog even oefenen'}</h2><p>Je had er <b>${ok} van de ${n}</b> goed.${st?'':' Je hebt er minstens '+(n-1)+' nodig. Je krijgt nieuwe vragen.'}</p>`;
+  if(st){confetti();}
+  const again=h('button','btn '+(st?'alt':''),st?'Nog een keer (nieuwe vragen)':'Opnieuw proberen');again.onclick=()=>startLevel(L);
+  if(st&&nxt&&unlocked(nxt)){const nb=h('button','btn',`Volgende: ${nxt.name} →`);nb.onclick=()=>openSheet(nxt);c.appendChild(nb);}
+  else if(st&&!nxt&&!L.world.optional&&toetsOpen()){const nb=h('button','btn pink','Naar de oefentoetsen 🏆');nb.onclick=renderHome;c.appendChild(nb);}
+  c.appendChild(again);
+  const hm=h('button','btn alt','Terug naar de kaart');hm.onclick=renderHome;c.appendChild(hm);
+  r.appendChild(c);app.appendChild(r);
+}
+
+/* ---------- toets ---------- */
+function startToets(t){cur={mode:'toets',t,opg:makeToets(t),apis:[]};renderToets();}
+function renderToets(){
+  window.scrollTo(0,0);app.innerHTML='';
+  const t=h('div','');t.innerHTML=`<b style="font-size:18px">Oefentoets ${cur.t+1}</b><div style="font-size:12px">H3 §3.2 t/m §3.6 · rekenmachine mag · schrijf je berekening op papier</div>`;t.style.flex='1';
+  app.appendChild(topBar(()=>{if(cur.done)renderHome();else ask('Stoppen? Je antwoorden gaan verloren.','Ja, stoppen',renderHome);},t));
+  const head=h('div','');app.appendChild(head);
+  let max=0;
+  cur.opg.forEach((o,k)=>{
+    const c=h('div','opg');c.appendChild(h('h3','',`Opgave ${k+1}`));
+    const cx=renderCtx(o.ctx);if(cx)c.appendChild(cx);
+    o.parts.forEach((p,j)=>{max+=p.pts;const sub=p.ctx?renderCtx(p.ctx):null;const api=buildPart(p,{label:o.parts.length>1?'abcdefg'[j]:'',showPts:true});if(sub)api.el.insertBefore(sub,api.el.children[1]);c.appendChild(api.el);cur.apis.push({api,p});});
+    app.appendChild(c);
+  });
+  cur.max=max;
+  const bot=h('div','bottom');const inn=h('div','in');const btn=h('button','btn pink','Inleveren');inn.appendChild(btn);bot.appendChild(inn);app.appendChild(bot);
+  btn.onclick=()=>{
+    if(cur.done){renderHome();return;}
+    const open=cur.apis.filter(a=>!a.api.answered()).length;
+    if(open&&!btn.dataset.sure){ask(`Je hebt nog ${open} ${open===1?'vraag':'vragen'} niet beantwoord. Toch inleveren?`,'Ja, inleveren',()=>{btn.dataset.sure='1';btn.click();});return;}
+    let score=0;
+    cur.apis.forEach(({api,p})=>{
+      const f=api.answered()?api.frac():0;const got=Math.round(f*p.pts*2)/2;score+=got;
+      api.lock();api.reveal();api.el.classList.add(got===p.pts?'okp':'nop');
+      const pq=api.el.querySelector('.pq');pq.insertAdjacentHTML('afterbegin',`<span class="mark">${got===p.pts?'✅':got>0?'🟡':'❌'}</span>`);
+      pq.insertAdjacentHTML('beforeend',`<span class="pscore">${nl(got)} / ${p.pts}</span>`);
+      const sol=h('div','psol',(got===p.pts?'':api.solText+'<br>')+(p.uitleg||''));if(got!==p.pts||p.uitleg)api.el.appendChild(sol);
+    });
+    const cijfer=Math.max(1,Math.round((1+9*score/cur.max)*10)/10);
+    const b=SAVE.toets[cur.t];SAVE.toets[cur.t]={best:Math.max(b?b.best:0,cijfer)};store();
+    cur.done=true;
+    head.innerHTML='';const rc=h('div','res');rc.style.marginTop='16px';
+    rc.innerHTML=`<div class="card"><div class="cijfer">${nl(cijfer)}</div><h2>${cijfer>=8?'Wauw, top! 🏆':cijfer>=5.5?'Voldoende! 👍':'Nog even oefenen 💪'}</h2><p>Je had <b>${nl(score)} van de ${cur.max}</b> punten. Hieronder zie je per vraag wat goed en fout ging.</p></div>`;
+    head.appendChild(rc);if(cijfer>=5.5)confetti();
+    btn.textContent='Terug naar de kaart';btn.className='btn';window.scrollTo({top:0,behavior:'smooth'});
+  };
+}
+
+/* ---------- spiekbrief ---------- */
+function renderSpiek(){
+  window.scrollTo(0,0);app.innerHTML='';
+  const t=h('div','');t.innerHTML='<b style="font-size:18px">📘 Spiekbrief H3</b>';t.style.flex='1';
+  app.appendChild(topBar(renderHome,t));
+  SPIEK.forEach(([ti,body])=>{const c=h('div','opg');c.appendChild(h('h3','',ti));c.appendChild(h('div','',body));c.style.fontSize='15px';app.appendChild(c);});
+  const ex=h('div','opg');ex.innerHTML='<h3>Voorbeeld assenstelsel</h3>';
+  ex.appendChild(figEl({grid:COORD(3),pts:[{l:'K',x:3,y:-2},{l:'L',x:-1.5,y:2},{l:'M',x:-1,y:-2.5}],labeled:true}));
+  ex.appendChild(h('p','','K(3, −2) is een roosterpunt. L(−1½, 2) en M(−1, −2½) niet.'));
+  app.appendChild(ex);
+}
+
+/* ---------- testhulp (alleen voor de maker) ---------- */
+window.__selfTest=function(rounds=25){
+  const errs=[];const host=h('div');
+  const check=(p,where)=>{
+    try{
+      if(p.type==='mc'){if(p.a<0||new Set(p.opts).size!==p.opts.length)errs.push(where+': mc-opties dubbel/ongeldig '+JSON.stringify(p.opts));}
+      if(p.type==='num'&&!isFinite(p.a))errs.push(where+': antwoord geen getal');
+      const api=buildPart(p);host.appendChild(api.el);api.autofill();
+      if(api.frac()<0.999)errs.push(where+': goed antwoord wordt fout gerekend: '+p.q.slice(0,90));
+      const api2=buildPart(p);api2.autowrong();if(api2.frac()>0.999)errs.push(where+': fout antwoord wordt goed gerekend: '+p.q.slice(0,80));
+      if(p.ctx){renderCtx(p.ctx);}
+      if(/undefined|NaN/.test(p.q+(p.uitleg||'')+(p.opts||[]).join('')))errs.push(where+': undefined/NaN in tekst: '+p.q.slice(0,120));
+    }catch(e){errs.push(where+': '+e.message);}
+  };
+  for(let r=0;r<rounds;r++){
+    allLevels().forEach(L=>{let qs;try{qs=L.gen();}catch(e){errs.push(L.id+' gen: '+e.message);return;}if(qs.length!==6)errs.push(L.id+': '+qs.length+' vragen');qs.forEach((p,k)=>check(p,L.id+'#'+k));});
+    [0,1,2,3].forEach(t=>{try{const O=makeToets(t);O.forEach((o,k)=>{if(o.ctx)renderCtx(o.ctx);o.parts.forEach((p,j)=>check(p,'T'+(t+1)+'.'+(k+1)+'abcdefg'[j]));});}catch(e){errs.push('toets '+t+': '+e.message);}});
+  }
+  return [...new Set(errs)].slice(0,60);
+};
+renderHome();
+
+</script>
+</body>
+</html>
