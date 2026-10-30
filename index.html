@@ -480,7 +480,8 @@ function genPuzzel(){
   ()=>mc('Welk getal komt er nu?<br><b>1, 1, 2, 3, 5, 8, …</b>','13',['11','12','14'],'Je telt steeds de vorige twee op: 5 + 8 = 13.'),
   ()=>num('In dit vierkant tellen alle rijen, kolommen en diagonalen op tot 15. Welk getal hoort bij het vraagteken?<div class="mini">2 &nbsp;7 &nbsp;6<br>9 &nbsp;5 &nbsp;1<br>4 &nbsp;3 &nbsp;?</div>',8,'Onderste rij: 4 + 3 + ? = 15, dus ? = 8.'),
   ()=>mc('Anna is ouder dan Bo. Bo is ouder dan Cas. Wie is de jongste?','Cas',['Anna','Bo','Dat kun je niet weten'],'Anna is ouder dan Bo en Bo is ouder dan Cas. Cas is dus de jongste.'),
-  ()=>num('Je maakt rijtjes vierkanten van lucifers. 1 vierkant: 4 lucifers. 2 vierkanten: 7 lucifers. 3 vierkanten: 10 lucifers. Hoeveel lucifers heb je nodig voor 5 vierkanten?',16,'Er komen steeds 3 lucifers bij: 4, 7, 10, 13, 16.'),
+  ()=>{const a=R(2,9),d=R(2,6),n=R(6,8);const rij=[0,1,2,3].map(k=>a+k*d);const all=r10(0,n-1).map(k=>a+k*d);
+    return num(`Bij deze rij komt er steeds hetzelfde getal bij.<br><b>${rij.join(', ')}, …</b><br>Wat is het ${n}e getal van de rij?`,a+(n-1)*d,`Er komt steeds ${d} bij: ${all.join(', ')}. Het ${n}e getal is ${a+(n-1)*d}.`);},
   ()=>num('Twee munten zijn samen € 1,10. De ene munt is € 1,00 duurder dan de andere. Hoeveel kost de goedkoopste munt?',0.05,'Goedkoopste € 0,05 en duurste € 1,05. Samen € 1,10 en het verschil is € 1,00.',{pre:'€'}),
   ()=>num('Wat is 1 + 2 + 3 + … + 10? Tip: tel eerst 1 + 10, 2 + 9, 3 + 8, enzovoort.',55,'Je krijgt 5 paren van 11. Dus 5 ∙ 11 = 55.'),
   ()=>mc('Je gooit met twee dobbelstenen. Welke som kun je NIET gooien?','13',['2','7','12'],'Elke dobbelsteen geeft 1 t/m 6. De som ligt dus tussen 2 en 12.'),
@@ -916,7 +917,7 @@ const UL=a=>'<ul>'+a.map(x=>'<li>'+x+'</li>').join('')+'</ul>';
 const WORLDS=[
  {id:'w1',title:'Wiskundig denken',sub:'Puzzelen en problemen oplossen · telt niet mee voor de toets',icon:'🧠',color:'#ff8a3d',optional:true,levels:[
   {id:'1a',name:'Patronen',icon:'🧩',gen:genPuzzel,leer:UL(['Zoek wat er steeds gebeurt: komt er iets bij, gaat er iets af, of wordt het keer iets?','Schrijf de verschillen tussen de getallen op.','Ken de kwadraten: 1, 4, 9, 16, 25, …','Controleer: past je regel bij het hele rijtje?'])},
-  {id:'1b',name:'Problemen oplossen',icon:'🔍',gen:genProblemen,leer:UL(['<b>Lees</b>: wat weet je en wat moet je vinden?','<b>Kies een aanpak</b>: tabel maken, tekening maken, systematisch proberen, terugwerken.','<b>Reken</b> het uit.','<b>Controleer</b>: klopt je antwoord met de vraag?'])},
+  {id:'1b',name:'Problemen oplossen',icon:'🔍',gen:genProblemen,leer:UL(['<b>Zit rustig</b>: adem diep in. You can do this! ❤️','<b>Lees</b>: wat weet je en wat moet je vinden?','<b>Kies een aanpak</b>: tabel maken, tekening maken, systematisch proberen, terugwerken.','<b>Reken</b> het uit.','<b>Controleer</b>: klopt je antwoord met de vraag?'])},
   {id:'1c',name:'Logica & Murdoku',icon:'🕵️',gen:genLogica,leer:UL(['Gebruik elke aanwijzing en streep af wat niet kan.','Begin bij de aanwijzing die het meeste uitsluit.','In een mini-Murdoku staat in elke rij en elke kolom precies één persoon.'])}
  ]},
  {id:'w2',title:'§3.2 Assenstelsel',sub:'Coördinaten, roosterpunten en zelf tekenen',icon:'📍',color:'#6c3ce0',levels:[
