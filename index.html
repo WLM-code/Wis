@@ -221,6 +221,7 @@ function gridSVG(g0){
   const X=x=>m.l+(x-g.xmin)*cx,Y=y=>m.t+(g.ymax-y)*cy;
   const nx=Math.round(xr/g.xs),ny=Math.round(yr/g.ys);
   const lx=(g.lbl&&g.lbl.x)||1,ly=(g.lbl&&g.lbl.y)||1;
+  if(g.minorY){const nm=Math.round(yr/g.minorY);for(let i=0;i<=nm;i++){const y=g.ymin+i*g.minorY;S('line',{x1:m.l,y1:Y(y),x2:m.l+pw,y2:Y(y),stroke:'#eeeaf9','stroke-width':0.8},svg);}}
   for(let i=0;i<=nx;i++){const x=g.xmin+i*g.xs;S('line',{x1:X(x),y1:m.t,x2:X(x),y2:m.t+ph,stroke:'#d6d0ee','stroke-width':1.2},svg);}
   for(let i=0;i<=ny;i++){const y=g.ymin+i*g.ys;S('line',{x1:m.l,y1:Y(y),x2:m.l+pw,y2:Y(y),stroke:'#d6d0ee','stroke-width':1.2},svg);}
   const T=(x,y,t,o={})=>{const e=S('text',Object.assign({x,y,'font-size':o.fs||12,'font-weight':800,fill:'#241553','text-anchor':o.a||'middle'},o.at||{}),svg);e.textContent=t;return e;};
@@ -726,9 +727,11 @@ function genTabel33(){
 }
 function plotFor(o,q,extra={}){
   const ys=o.xs.map(o.f);const ax=axisFor(ys);const st=stepOf(o.xs);
-  const sy=ax.step>=5?ax.step/5:(ys.every(Number.isInteger)?1:0.5);
-  const allOn=ys.every(v=>Math.abs(v/sy-Math.round(v/sy))<1e-9);
-  const grid={style:'chart',xmin:0,xmax:o.xs[o.xs.length-1],xs:st,ymin:ax.min,ymax:ax.max,ys:ax.step,square:false,w:300,h:260,xlab:o.c.v,ylab:o.c.out};
+  const isMul=(v,c)=>Math.abs(v/c-Math.round(v/c))<1e-6;
+  const cands=[ax.step/5,ax.step/10,ax.step/20,ax.step/50,0.5,0.25].filter(c=>c<=ax.step);
+  let sy=cands.find(c=>ys.every(v=>isMul(v,c)));const allOn=!!sy;if(!sy)sy=ax.step/5;
+  const range=ax.max-ax.min;const hh=Math.round(Math.min(440,Math.max(260,range/sy*7)));
+  const grid={style:'chart',xmin:0,xmax:o.xs[o.xs.length-1],xs:st,ymin:ax.min,ymax:ax.max,ys:ax.step,minorY:sy<ax.step?sy:0,square:false,w:300,h:hh,xlab:o.c.v,ylab:o.c.out};
   return plot(q,Object.assign({grid,targets:o.xs.map(x=>({x,y:o.f(x)})),connect:'line',snap:{x:st,y:sy},tol:{x:0,y:allOn?0:sy/2},uitleg:'Teken eerst alle punten uit de tabel. De lijn gaat door het eerste en het laatste punt; alle andere punten liggen erop.'},extra));
 }
 function genGrafiekLin(){
